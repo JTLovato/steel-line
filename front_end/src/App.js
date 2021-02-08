@@ -38,7 +38,7 @@ function App() {
         <header className="row">
           <div>
           <Link className="brand" to="/">
-            STeEL | LINE
+            STEEL | LINE
               </Link>
           </div>
           <div>
