@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { detailsUser, updateUserProfile } from '../actions/userActions';
 import LoadingBox from '../components/LoadingBox';
@@ -13,6 +14,7 @@ export default function ProfileScreen() {
     const [sellerName, setSellerName] = useState('');
     const [sellerLogo, setSellerLogo] = useState('');
     const [sellerDescription, setSellerDescription] = useState('');
+
 
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
@@ -58,6 +60,30 @@ export default function ProfileScreen() {
         );
       }
     };
+
+    const [loadingUpload, setLoadingUpload] = useState(false);
+    const [errorUpload, setErrorUpload] = useState('');
+
+    const uploadFileHandler = async (e) => {
+      const file = e.target.files[0];
+      const bodyFormData = new FormData();
+      bodyFormData.append('image', file);
+      setLoadingUpload(true);
+      try {
+        const { data } = await Axios.post('/api/uploads', bodyFormData, {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+            Authorization: `Bearer ${userInfo.token}`,
+          },
+        });
+        setSellerLogo(data);
+        setLoadingUpload(false);
+      } catch (error) {
+        setErrorUpload(error.message);
+        setLoadingUpload(false);
+      }
+    };
+
   return (
     <div>
       <form className="form" onSubmit={submitHandler}>
@@ -131,14 +157,27 @@ export default function ProfileScreen() {
                   ></input>
                 </div>
                 <div>
-                  <label htmlFor="sellerLogo">Seller Logo</label>
-                  <input
-                    id="sellerLogo"
-                    type="text"
-                    placeholder="Enter Seller Logo"
-                    value={sellerLogo}
-                    onChange={(e) => setSellerLogo(e.target.value)}
-                  ></input>
+                <label htmlFor="sellerLogo">Image</label>
+              <input
+                id="sellerLogo"
+                type="text"
+                placeholder="Enter image"
+                value={sellerLogo}
+                onChange={(e) => setSellerLogo(e.target.value)}
+              ></input>
+            </div>
+            <div>
+              <label htmlFor="imageFile">Image File</label>
+              <input
+                type="file"
+                id="imageFile"
+                label="Choose Image"
+                onChange={uploadFileHandler}
+              ></input>
+                {loadingUpload && <LoadingBox></LoadingBox>}
+              {errorUpload && (
+                <MessageBox variant="danger">{errorUpload}</MessageBox>
+              )}
                 </div>
                 <div>
                   <label htmlFor="sellerDescription">Seller Description</label>
