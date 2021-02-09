@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import Product from '../components/Product';
@@ -8,7 +7,7 @@ import MessageBox from '../components/MessageBox';
 import { useDispatch, useSelector } from 'react-redux';
 import { listProducts } from '../actions/productActions';
 import { listTopSellers } from '../actions/userActions';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function HomeScreen() {
   const dispatch = useDispatch();
@@ -37,14 +36,14 @@ export default function HomeScreen() {
         <>
           {sellers.length === 0 && <MessageBox>No Seller Found</MessageBox>}
           <Carousel showArrows autoPlay showThumbs={false}>
-            {/* {sellers.map((seller) => (
+            {sellers.map((seller) => (
               <div key={seller._id}>
                 <Link to={`/seller/${seller._id}`}>
                   <img src={seller.seller.logo} alt={seller.seller.name} />
                   <p className="legend">{seller.seller.name}</p>
                 </Link>
               </div>
-            ))} */}
+            ))}
           </Carousel>
         </>
       )}
@@ -58,7 +57,7 @@ export default function HomeScreen() {
           {products.length === 0 && <MessageBox>No Product Found</MessageBox>}
           <div className="row center">
             {products.map((product) => (
-              <Product key={product._id} product={product} seller={product.seller._id}></Product>
+              <Product key={product._id} product={product}></Product>
             ))}
           </div>
         </>
