@@ -84,7 +84,14 @@ orderRouter.get(
           update_time: req.body.update_time,
           email_address: req.body.email_address,
         };
-        const updatedOrder = await order.save();
+        const updatedOrder = await order.save()
+        for ( const index in updatedOrder.orderItems ) {
+            const item = updatedOrder.orderItems[index]
+            const product = await Product.findById(item.product)
+            product.countInStock -= item.qty;
+            product.sold += item.qty
+            await product.save()
+        } 
         res.send({ message: 'Order Paid', order: updatedOrder });
       } else {
         res.status(404).send({ message: 'Order Not Found' });
