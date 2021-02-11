@@ -7,6 +7,7 @@ body {
   height: 100vh;
   font-size: 1.6rem;
   font-family: Helvetica, Arial, sans-serif;
+  background-color: #fafafa;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -27,12 +28,12 @@ body {
 }
 header {
   grid-area: header;
-  background-color: #203040;
-
+  background-color: #070216;
 }
 
+.header.row,
+.header-left,
 .header-right {
-  width: 50rem;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
@@ -42,6 +43,7 @@ main {
   grid-area: main;
   padding: 1rem;
 }
+
 footer {
   grid-area: footer;
   background-color: #203040;
@@ -53,7 +55,7 @@ h1 {
   padding: 1rem 0;
 }
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 1rem 0;
   margin: 0;
 }
@@ -137,12 +139,17 @@ a.brand {
 }
 .row {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-
+.hoeading {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .row.center {
   justify-content: center;
@@ -240,8 +247,8 @@ img.large {
 
 /* Card */
 .card {
-  border: 0.1rem #c0c0c0 solid;
-  background-color: #f8f8f8;
+  border: 0.1rem #ebe8e8 solid;
+  background-color: #fff;
   border-radius: 0.5rem;
   margin: 1rem;
   width: 28rem;

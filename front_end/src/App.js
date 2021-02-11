@@ -52,8 +52,8 @@ function App() {
   return (
     <BrowserRouter>
       <div className="grid-container">
-        <header className="row">
-          <div className="row center">
+        <header className="row heading">
+          <div className="center header-left">
             <button
               type="button"
               className="open-sidebar"
