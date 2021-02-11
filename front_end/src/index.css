@@ -28,7 +28,16 @@ body {
 header {
   grid-area: header;
   background-color: #203040;
+
 }
+
+.header-right {
+  width: 50rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
 main {
   grid-area: main;
   padding: 1rem;
@@ -46,6 +55,7 @@ h1 {
 h2 {
   font-size: 1.6rem;
   padding: 1rem 0;
+  margin: 0;
 }
 
 a {
@@ -86,7 +96,7 @@ button:hover {
   border: 0.1rem #404040 solid;
 }
 button.primary {
-  background-color: #f0c040;
+  background-color: #f6dd07;
 }
 button.block {
   width: 100%;
@@ -100,11 +110,21 @@ button.small {
 header a {
   color: #ffffff;
   padding: 1rem;
+  align-items: center;
 }
 a.brand {
   color: #ffffff;
   font-size: 3rem;
   font-weight: bold;
+  padding: 0;
+  width: 40rem;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.mainLogo {
+  width: 100%;
 }
 
 .badge {
@@ -117,10 +137,13 @@ a.brand {
 }
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
+
+
+
 .row.center {
   justify-content: center;
 }
@@ -221,6 +244,8 @@ img.large {
   background-color: #f8f8f8;
   border-radius: 0.5rem;
   margin: 1rem;
+  width: 28rem;
+  text-align: center;
 }
 .card-body {
   padding: 1rem;
@@ -230,6 +255,7 @@ img.large {
 }
 .price {
   font-size: 2rem;
+  font-weight: 700;
 }
 /* Rating */
 .rating span {

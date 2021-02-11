@@ -53,7 +53,7 @@ function App() {
     <BrowserRouter>
       <div className="grid-container">
         <header className="row">
-          <div>
+          <div className="row center">
             <button
               type="button"
               className="open-sidebar"
@@ -61,11 +61,11 @@ function App() {
             >
               <i className="fa fa-bars"></i>
             </button>
-
           <Link className="brand" to="/">
-            STEEL | LINE
-              </Link>
+            <img className="mainLogo" src="img/mainLogo.png" alt="Steel Line"></img>
+          </Link>
           </div>
+          <div className="header-right row center">
           <div>
             <Route 
               render={({history}) => 
@@ -74,6 +74,7 @@ function App() {
               ></SearchBox>}
             ></Route>
           </div>
+
           <div>
           <Link to="/cart">
               Cart
@@ -125,6 +126,7 @@ function App() {
               </div>
             )}
           </div>
+          </div>
         </header>
         <aside className={sidebarIsOpen ? 'open': ''}>
                 <ul className="categories">
@@ -150,6 +152,11 @@ function App() {
           )}
                 </ul>
         </aside>
+        
+
+
+
+        
         <main>
         <Route path="/cart/:id?" component={CartScreen}></Route>
         <Route path="/product/:id" component={ProductScreen} exact></Route>

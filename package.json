@@ -1,8 +1,8 @@
 {
-  "name": "aaaaa",
+  "name": "steel-line",
   "type": "module",
   "version": "1.0.0",
-  "description": "Ecommerce website like amazon",
+  "description": "E-commerce site focusing on Pittsburgh Sports",
   "main": "index.js",
   "scripts": {
     "build": "cd front_end && npm install && npm run build",
