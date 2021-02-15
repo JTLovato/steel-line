@@ -65,7 +65,7 @@ orderRouter.get(
       if (order) {
         res.send(order);
       } else {
-        res.status(404).send({ message: 'Order Not Found' });
+        res.status(404).send({ message: 'Order Not Found, Please Email Us At johnsawebdev@gmail.com' });
       }
     })
   );
@@ -94,7 +94,7 @@ orderRouter.get(
         } 
         res.send({ message: 'Order Paid', order: updatedOrder });
       } else {
-        res.status(404).send({ message: 'Order Not Found' });
+        res.status(404).send({ message: 'Order Not Found, Please Email Us At johnsawebdev@gmail.com' });
       }
     })
   );
@@ -109,7 +109,7 @@ orderRouter.get(
         const deleteOrder = await order.remove();
         res.send({ message: 'Order Deleted', order: deleteOrder });
       } else {
-        res.status(404).send({ message: 'Order Not Found' });
+        res.status(404).send({ message: 'Order Not Found, Please Email Us At johnsawebdev@gmail.com' });
       }
     })
   );
@@ -127,7 +127,7 @@ orderRouter.get(
         const updatedOrder = await order.save();
         res.send({ message: 'Order Delivered', order: updatedOrder });
       } else {
-        res.status(404).send({ message: 'Order Not Found' });
+        res.status(404).send({ message: 'Order Not Found, Please Email Us At johnsawebdev@gmail.com' });
       }
     })
   );

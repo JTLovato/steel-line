@@ -6,6 +6,7 @@ import MessageBox from '../components/MessageBox';
 import { Link } from 'react-router-dom';
 import Rating from '../components/Rating';
 import { PRODUCT_REVIEW_CREATE_RESET } from '../constants/productConstants';
+import Details from '../components/Details'
 
 export default function ProductScreen(props) {
     const dispatch = useDispatch();
@@ -57,19 +58,38 @@ export default function ProductScreen(props) {
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (
         <div>
-          <Link to="/">Back to result</Link>
           <div className="row top">
-            <div className="col-2">
-              <img
-                className="large"
-                src={product.image}
-                alt={product.name}
-              ></img>
+
+            {/* left side */}
+            <div className="col-2 yellow">
+              <div className="product-highlight">
+                <img
+                  className="large"
+                  src={product.image}
+                  alt={product.name}
+                ></img>
+                <div className="image-row">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                  ></img>
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                  ></img>
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                  ></img>
+                </div>
+              </div>
             </div>
-            <div className="col-1">
+
+            {/* center row */}
+            <div className="col-1 desc">
               <ul>
                 <li>
-                  <h1>{product.name}</h1>
+                  <h1 className="name">{product.name}</h1>
                 </li>
                 <li>
                   <Rating
@@ -77,13 +97,16 @@ export default function ProductScreen(props) {
                     numReviews={product.numReviews}
                   ></Rating>
                 </li>
-                <li>Pirce : ${product.price}</li>
+                <li className="price">Price : ${product.price}</li>
                 <li>
                   Description:
                   <p>{product.description}</p>
+                  <Link className="return" to="/">Return To Results</Link>
                 </li>
               </ul>
             </div>
+
+            {/* right side */}
             <div className="col-1">
               <div className="card card-body">
                 <ul>
@@ -137,6 +160,12 @@ export default function ProductScreen(props) {
                     </>
                   )}
                 </ul>
+              </div>
+              <div className="card card-body yellow ">
+                
+              <Details></Details>
+
+
               </div>
             </div>
           </div>

@@ -176,7 +176,7 @@ export default function OrderScreen(props) {
               <li>
                 <div className="row">
                   <div>
-                    <strong> Order Total</strong>
+                    <strong>Order Total</strong>
                   </div>
                   <div>
                     <strong>${order.totalPrice.toFixed(2)}</strong>
@@ -202,7 +202,7 @@ export default function OrderScreen(props) {
                   )}
                 </li>
               )}
-                            {userInfo.isAdmin && order.isPaid && !order.isDelivered && (
+               {userInfo.isAdmin && order.isPaid && !order.isDelivered && (
                 <li>
                   {loadingDeliver && <LoadingBox></LoadingBox>}
                   {errorDeliver && (
@@ -213,7 +213,7 @@ export default function OrderScreen(props) {
                     className="primary block"
                     onClick={deliverHandler}
                   >
-                    Deliver Order
+                    Mark Order As Delivered
                   </button>
                 </li>
               )}

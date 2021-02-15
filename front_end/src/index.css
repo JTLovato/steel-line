@@ -7,7 +7,10 @@ body {
   height: 100vh;
   font-size: 1.6rem;
   font-family: Helvetica, Arial, sans-serif;
-  background-color: #fafafa;
+  background-image: linear-gradient(180deg, #f0f0f0, #fcf7de);
+  background-color: #e9e9e9; 
+  height: 100%; 
+  background-size: cover; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -41,7 +44,6 @@ header {
 
 main {
   grid-area: main;
-  padding: 1rem;
 }
 
 footer {
@@ -106,6 +108,20 @@ button.block {
 
 button.small {
   font-size: 1.2rem;
+}
+
+.name {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.desc {
+  text-align: center;
+  padding: 1rem;
+}
+
+.desc ul .price {
+  font-size: 3rem;
 }
 
 /* Header */
@@ -182,6 +198,22 @@ a.brand {
   padding: 1rem;
 }
 
+.return {
+  background-color: #f6dd07;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.return:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.container {
+  margin-top: 1rem;
+}
+
 /* Aside */
 
 aside {
@@ -245,6 +277,13 @@ img.large {
   width: 100%;
 }
 
+.profile-pic {
+  border-radius: 50%;
+  border: solid 5px #fff;
+  z-index: 1;
+  position: relative;
+}
+
 /* Card */
 .card {
   border: 0.1rem #ebe8e8 solid;
@@ -273,6 +312,33 @@ img.large {
 .rating span:last-child {
   color: #404040;
 }
+
+/* Product highlight */
+
+.product-highlight {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 84%;
+  margin-left:8%;
+}
+
+.product-highlight img {
+  box-shadow: -5px 5px 15px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1rem;
+}
+
+.image-row img {
+  width: 16%;
+}
+
 
 /* Alert */
 
@@ -407,4 +473,51 @@ img.large {
 }
 .pagination a.active {
   font-weight: bold;
+}
+
+
+/* player details */
+
+.player-details {
+  font-size: 8rem;
+  z-index: -2;
+  opacity: 15%;
+  width: 100%;
+}
+
+.player-top {
+  text-align: left;
+  margin-bottom: -7rem;
+  z-index: -2;
+}
+
+.player-bottom {
+  text-align: right;
+  margin-top: -9rem;
+}
+
+.player-showcase {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.player-showcase li {
+  margin: 0;
+}
+
+.name-span {
+  height: 3px;
+  background-color: black;
+  width: 4rem;
+}
+
+.yellow {
+  background-color: #f6dd07;
+  color: black;
+}
+
+img.card-large {
+  width: 75%;
 }

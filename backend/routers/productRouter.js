@@ -129,7 +129,7 @@ productRouter.post(
         const updatedProduct = await product.save();
         res.send({ message: 'Product Updated', product: updatedProduct });
       } else {
-        res.status(404).send({ message: 'Product Not Found' });
+        res.status(404).send({ message: 'Product Not Found, Please Email Us At johnsawebdev@gmail.com' });
       }
     })
   );
@@ -144,7 +144,7 @@ productRouter.post(
         const deleteProduct = await product.remove();
         res.send({ message: 'Product Deleted', product: deleteProduct });
       } else {
-        res.status(404).send({ message: 'Product Not Found' });
+        res.status(404).send({ message: 'Product Not Found, Please Email Us At johnsawebdev@gmail.com' });
       }
     })
   );
@@ -159,7 +159,7 @@ productRouter.post(
         if (product.reviews.find((x) => x.name === req.user.name)) {
           return res
             .status(400)
-            .send({ message: 'You already submitted a review' });
+            .send({ message: `You've Already Submitted A Review` });
         }
         const review = {
           name: req.user.name,
@@ -177,7 +177,7 @@ productRouter.post(
           review: updatedProduct.reviews[updatedProduct.reviews.length - 1],
         });
       } else {
-        res.status(404).send({ message: 'Product Not Found' });
+        res.status(404).send({ message: 'Product Not Found, Please Email Us At johnsawebdev@gmail.com' });
       }
     })
   );

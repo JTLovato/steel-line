@@ -40,7 +40,6 @@ export default function UserEditScreen(props) {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    // dispatch update user
     dispatch(updateUser({ _id: userId, name, email, isAdmin }));
   };
   return (
@@ -80,7 +79,7 @@ export default function UserEditScreen(props) {
               ></input>
             </div>
             <div>
-              <label htmlFor="isAdmin">Is Admin</label>
+              <label htmlFor="isAdmin">Admin</label>
               <input
                 id="isAdmin"
                 type="checkbox"

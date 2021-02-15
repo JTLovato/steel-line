@@ -37,7 +37,7 @@ userRouter.post(
         return;
       }
     }
-    res.status(401).send({ message: 'Invalid email or password' });
+    res.status(401).send({ message: 'Invalid Email Or Password, Please Try Again' });
   })
 );
 userRouter.post(
@@ -122,7 +122,7 @@ userRouter.delete(
       const deleteUser = await user.remove();
       res.send({ message: 'User Deleted', user: deleteUser });
     } else {
-      res.status(404).send({ message: 'User Not Found' });
+      res.status(404).send({ message: 'User Not Found ' });
     }
   })
 );

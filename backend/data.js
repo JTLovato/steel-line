@@ -537,6 +537,7 @@ const data = {
             size: 's',
             year: 2021,
             image: '../img/penguins/jsdesmith1aw2021.jpg',
+            profile: "../img/headshots/desmith.jpg",
             price: 229.99,
             countInStock: 100,
             brand: 'Adidas',
