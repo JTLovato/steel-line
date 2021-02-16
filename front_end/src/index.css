@@ -278,6 +278,10 @@ img.large {
   width: 100%;
 }
 
+#imageFile {
+  background-color: #fff
+}
+
 .profile-pic {
   border-radius: 50%;
   border: solid 5px #fff;
@@ -384,6 +388,13 @@ img.large {
   max-width: 60rem;
   margin: 0 auto;
 }
+
+.product-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .form > div {
   display: flex;
   flex-direction: column;
@@ -391,6 +402,16 @@ img.large {
 }
 .form label {
   margin: 1rem 0;
+}
+
+.halved {
+  width: 45%;
+  margin: 1%;
+}
+
+.full {
+  width: 98%;
+  margin: 1%;
 }
 
 /* Dropdown */

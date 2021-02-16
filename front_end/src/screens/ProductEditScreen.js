@@ -8,9 +8,14 @@ import { PRODUCT_UPDATE_RESET } from '../constants/productConstants';
 
 export default function ProductEditScreen(props) {
   const productId = props.match.params.id;
+  const [title, setTitle] = useState('');
   const [name, setName] = useState('');
+  const [playersNum, setPlayersNum] = useState('');
+  const [position, setPosition] = useState('');
+  const [team, setTeam] = useState('');
   const [price, setPrice] = useState('');
   const [image, setImage] = useState('');
+  const [style, setStyle] = useState('');
   const [category, setCategory] = useState('');
   const [countInStock, setCountInStock] = useState('');
   const [brand, setBrand] = useState('');
@@ -35,7 +40,9 @@ export default function ProductEditScreen(props) {
         dispatch({ type: PRODUCT_UPDATE_RESET });
       dispatch(detailsProduct(productId));
     } else {
+      setTitle(product.title);
       setName(product.name);
+      setPlayersNum(product.playersNum);
       setPrice(product.price);
       setImage(product.image);
       setCategory(product.category);
@@ -49,7 +56,12 @@ export default function ProductEditScreen(props) {
     dispatch(
         updateProduct({
           _id: productId,
+          title,
           name,
+          playersNum,
+          position,
+          team,
+          style,
           price,
           image,
           category,
@@ -88,7 +100,7 @@ export default function ProductEditScreen(props) {
 
   return (
     <div>
-      <form className="form" onSubmit={submitHandler}>
+      <form className="form product-form" onSubmit={submitHandler}>
         <div>
           <h1>Edit Product {productId}</h1>
         </div>
@@ -100,17 +112,64 @@ export default function ProductEditScreen(props) {
           <MessageBox variant="danger">{error}</MessageBox>
         ) : (
           <>
-            <div>
-              <label htmlFor="name">Name</label>
+            <div className="full">
+              <label htmlFor="title">Title</label>
+              <input
+                id="title"
+                type="text"
+                placeholder="Enter Title"
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+              ></input>
+            </div>
+            <div className="full">
+              <label htmlFor="name">Player's Name</label>
               <input
                 id="name"
                 type="text"
-                placeholder="Enter name"
+                placeholder="Enter Player's Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               ></input>
             </div>
-            <div>
+            <div className="halved">
+              <label htmlFor="playerNum">Player's Number</label>
+                <input
+                  id="playerNum"
+                  type="text"
+                  placeholder="#"
+                  value={playersNum}
+                  onChange={(e) => setPlayersNum(e.target.value)}
+                ></input>
+            </div>
+            <div className="halved">
+              <label htmlFor="position">Position</label>
+                <input
+                  id="position"
+                  type="text"
+                  placeholder="Position"
+                  value={position}
+                  onChange={(e) => setPosition(e.target.value)}
+                ></input>
+            </div>
+            <div className="halved">
+              <label htmlFor="team">Select Team</label>
+              <select 
+                id="team" 
+                name="team" 
+                placeHolder="Select Team" 
+                onChange={(e) => setTeam(e.target.value)}
+                >
+                <option value="penguins">Penguins</option>
+                <option value="steelers">Steelers</option>
+                <option value="pirates">Pirates</option>
+                <option value="riverhounds">Riverhounds FC</option>
+                <option value="panthers">Panthers</option>
+                <option value="nonspecific">Pittsburgh Generic</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div className="halved">
               <label htmlFor="price">Price</label>
               <input
                 id="price"
@@ -120,7 +179,7 @@ export default function ProductEditScreen(props) {
                 onChange={(e) => setPrice(e.target.value)}
               ></input>
             </div>
-            <div>
+            <div className="full">
               <label htmlFor="image">Image</label>
               <input
                 id="image"
@@ -130,7 +189,7 @@ export default function ProductEditScreen(props) {
                 onChange={(e) => setImage(e.target.value)}
               ></input>
             </div>
-            <div>
+            <div className="full">
               <label htmlFor="imageFile">Image File</label>
               <input
                 type="file"
@@ -143,17 +202,21 @@ export default function ProductEditScreen(props) {
                 <MessageBox variant="danger">{errorUpload}</MessageBox>
               )}
             </div>
-            <div>
+            <div className="halved">
               <label htmlFor="category">Category</label>
-              <input
-                id="category"
-                type="text"
-                placeholder="Enter category"
-                value={category}
+              <select 
+                id="category" 
+                name="category" 
+                placeHolder="Select Category" 
                 onChange={(e) => setCategory(e.target.value)}
-              ></input>
+              >
+                <option value="jersey">Jersey</option>
+                <option value="shirt">Shirt</option>
+                <option value="hat">Hat</option>
+                <option value="other">Other</option>
+              </select>
             </div>
-            <div>
+            <div className="halved">
               <label htmlFor="brand">Brand</label>
               <input
                 id="brand"
@@ -163,7 +226,7 @@ export default function ProductEditScreen(props) {
                 onChange={(e) => setBrand(e.target.value)}
               ></input>
             </div>
-            <div>
+            <div className="halved">
               <label htmlFor="countInStock">Quantity In Stock</label>
               <input
                 id="countInStock"
@@ -173,7 +236,22 @@ export default function ProductEditScreen(props) {
                 onChange={(e) => setCountInStock(e.target.value)}
               ></input>
             </div>
-            <div>
+            <div className="halved">
+              <label htmlFor="style">Style</label>
+              <select 
+                id="style" 
+                name="style" 
+                placeHolder="Select Style" 
+                onChange={(e) => setStyle(e.target.value)}
+              >
+                <option value="home">Home</option>
+                <option value="away">Away</option>
+                <option value="third">Third</option>
+                <option value="reverse-retro">Reverse Retro</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div className="full">
               <label htmlFor="description">Description</label>
               <textarea
                 id="description"
