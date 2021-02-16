@@ -12,6 +12,7 @@ export default function SearchScreen(props) {
     const {
         name = 'all',
         category = 'all',
+        team = 'all',
         min = 0,
         max = 0,
         rating = 0,
@@ -34,13 +35,14 @@ export default function SearchScreen(props) {
         pageNumber,
         name: name !== 'all' ? name : '',
         category: category !== 'all' ? category : '',
+        team: team !== 'all' ? team : '',
         min,
         max,
         rating,
         order,
       })
     );
-}, [category, dispatch, max, min, name, order, rating, pageNumber]);
+}, [category, team, dispatch, max, min, name, order, rating, pageNumber]);
 
   const getFilterUrl = (filter) => {
     const filterPage = filter.page || pageNumber;
@@ -55,7 +57,7 @@ export default function SearchScreen(props) {
 
   return (
     <div>
-      <div className="row">
+      <div className="row margin-sides">
         {loading ? (
           <LoadingBox></LoadingBox>
         ) : error ? (
@@ -63,7 +65,7 @@ export default function SearchScreen(props) {
         ) : (
           <div>{products.length} Results</div>
         )}
-               <div>
+          <div>
           Sort by{' '}
           <select
             value={order}
@@ -79,7 +81,7 @@ export default function SearchScreen(props) {
         </div>
       </div>
       <div className="row top">
-        <div className="col-1">
+        <div className="col-1 margin-sides">
           <h3>Department</h3>
           <div>
             {loadingCategories ? (

@@ -542,7 +542,7 @@ const data = {
         description: 'You\'re the ultimate Pittsburgh Penguins fan, and nothing is better than watching Casey DeSmith in action. Whether you\'re behind the glass or the TV screen, this Casey DeSmith Authentic Player Jersey from adidas is the perfect way to express your fandom. It features the authentic Pittsburgh Penguins crest on the front and Casey DeSmith\'s name and number on the back, along with PlayDry and X-trafil fabric technologies that maximize comfort and durability, respectively.',
     },
     {
-        _id: 'jsmoran19ho2021',
+
         name: 'Colin Moran Pittsburgh Pirates Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -561,7 +561,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Colin Moran Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jsmoran19aw2021',
         name: 'Colin Moran Pittsburgh Pirates Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -580,7 +579,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Colin Moran Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jsmoran19alt2021',
         name: 'Colin Moran Pittsburgh Pirates Nike Alternate Jersey ',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -599,7 +597,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Colin Moran Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
     {
-        _id: 'jsfrazier26ho2021',
         name: 'Adam Frazier Pittsburgh Pirates Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -618,7 +615,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Adam Frazier Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jsfrazier26aw2021',
         name: 'Adam Frazier Pittsburgh Pirates Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -637,7 +633,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Adam Frazier Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jsfrazier26alt2021',
         name: 'Adam Frazier Pittsburgh Pirates Nike Alternate Jersey ',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -656,7 +651,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Adam Frazier Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
     {
-        _id: 'jshayes13ho2021',
         name: 'Ke\'Bryan Hayes Pittsburgh Pirates Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -675,7 +669,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Ke\'Bryan Hayes Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jshayes13aw2021',
         name: 'Ke\'Bryan Hayes Pittsburgh Pirates Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -694,7 +687,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Ke\'Bryan Hayes Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jshayes13alt2021',
         name: 'Ke\'Bryan Hayes Pittsburgh Pirates Nike Alternate Jersey ',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -713,7 +705,6 @@ const data = {
         description: 'You\re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Ke\'Bryan Hayes Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jsreynolds10ho2021',
         name: 'Bryan Reynolds Pittsburgh Pirates Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -732,7 +723,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Bryan Reynolds Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jsreynolds10aw2021',
         name: 'Bryan Reynolds Pittsburgh Pirates Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -751,7 +741,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Bryan Reynolds Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jsreynolds10alt2021',
         name: 'Bryan Reynolds Pittsburgh Pirates Nike Alternate Jersey ',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -770,7 +759,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Bryan Reynolds Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jspolanco25ho2021',
         name: 'Gregory Polanco Pittsburgh Pirates Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -789,7 +777,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Gregory Polanco Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jspolanco25aw2021',
         name: 'Gregory Polanco Pittsburgh Pirates Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -808,7 +795,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Gregory Polanco Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jspolanco25alt2021',
         name: 'Gregory Polanco Pittsburgh Pirates Nike Alternate Jersey ',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -827,7 +813,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Gregory Polanco Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jsalford6ho2021',
         name: 'Anthony Alford Pittsburgh Pirates Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -847,7 +832,6 @@ const data = {
     },
 //Alfords jerseys only in white
 {
-        _id: 'jsalford6aw2021',
         name: 'Anthony Alford Pittsburgh Pirates Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -866,7 +850,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Anthony Alford Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jsalford6alt2021',
         name: 'Anthony Alford Pittsburgh Pirates Nike Alternate Jersey ',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -885,7 +868,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Anthony Alford Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jsstallings58ho2021',
         name: 'Jacob Stallings Pittsburgh Pirates Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -904,7 +886,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Jacob Stallings Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jsstallings58aw2021',
         name: 'Jacob Stallings Pittsburgh Pirates Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -923,7 +904,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Jacob Stallings Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jsstallings58alt2021',
         name: 'Jacob Stallings Pittsburgh Pirates Nike Alternate Jersey ',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -942,7 +922,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Jacob Stallings Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jsgonzalez2ho2021',
         name: 'Erik Gonzalez Pittsburgh Pirates Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -961,7 +940,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Erik Gonzalez Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jsgonzalez2aw2021',
         name: 'Erik Gonzalez Pittsburgh Pirates Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -980,7 +958,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Erik Gonzalez Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jsgonzalez2alt2021',
         name: 'Erik Gonzalez Pittsburgh Pirates Nike Alternate Jersey ',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -999,7 +976,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Erik Gonzalez Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jstaillon50ho2021',
         name: 'Jameson Taillon Pittsburgh Pirates Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -1018,7 +994,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Jameson Taillon Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jstaillon50aw2021',
         name: 'Jameson Taillon Pittsburgh Pirates Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -1037,7 +1012,6 @@ const data = {
         description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Jameson Taillon Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
     },
 {
-        _id: 'jstaillonalt2021',
         name: 'Jameson Taillon Pittsburgh Pirates Nike Alternate Jersey ',
         catagory: 'jersey',
         team: 'Pittsburgh Pirates',
@@ -1057,7 +1031,6 @@ const data = {
     },
 //Steelers 
 {
-        _id: 'jssmithschuster19ho2021',
         name: 'JuJu Smith-Schuster Pittsburgh Steelers Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1076,7 +1049,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and JuJu Smith-Schuster graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jssmithschuster19aw2021',
         name: 'JuJu Smith-Schuster Pittsburgh Steelers Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1095,7 +1067,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and JuJu Smith-Schuster graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jswatt90ho2021',
         name: 'TJ Watt Home Pittsburgh Steelers Nike Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1114,7 +1085,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and TJ Watt graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jswatt90aw2021',
         name: 'TJ Watt Away Pittsburgh Steelers Nike Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1133,7 +1103,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and TJ Watt graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jsfitzpatrick39ho2021',
         name: 'Minkah Fitzpatrick Pittsburgh Steelers Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1152,7 +1121,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and Minkah Fitzpatrick graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jsfitzpatrick39aw2021',
         name: 'Minkah Fitzpatrick Pittsburgh Steelers Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1171,7 +1139,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and Minkah Fitzpatrick graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jsconner30ho2021',
         name: 'James Conner Pittsburgh Steelers Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1190,7 +1157,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and James Conner graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jsconner30aw2021',
         name: 'James Conner Pittsburgh Steelers Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1209,7 +1175,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and James Conner graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jsroethlisberger7ho2021',
         name: 'Ben Roethlisberger Pittsburgh Steelers Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1228,7 +1193,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and Ben Roethlisberger graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jsroethlisberger7aw2021',
         name: 'Ben Roethlisberger Pittsburgh Steelers Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1247,7 +1211,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and Ben Roethlisberger graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jsrudolph2ho2021',
         name: 'Mason Rudolph Pittsburgh Steelers Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1266,7 +1229,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and Mason Rudolph graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jsrudolph2aw2021',
         name: 'Mason Rudolph Pittsburgh Steelers Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1285,7 +1247,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and Mason Rudolph graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jsvillanueva78ho2021',
         name: 'Alejandro Villanueva Pittsburgh Steelers Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1304,7 +1265,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and Alejandro Villanueva graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jsvillanueva78aw2021',
         name: 'Alejandro Villanueva Pittsburgh Steelers Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1323,7 +1283,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and Alejandro Villanueva graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jswheaton11ho2021',
         name: 'Markus Wheaton Pittsburgh Steelers Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1342,7 +1301,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and Markus Wheaton graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jswheaton11aw2021',
         name: 'Markus Wheaton Pittsburgh Steelers Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1361,7 +1319,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and Markus Wheaton graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jsbush55ho2021',
         name: 'Devin Bush Pittsburgh Steelers Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1380,7 +1337,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and Devin Bush graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jsbush55aw2021',
         name: 'Devin Bush Pittsburgh Steelers Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1399,7 +1355,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and Devin Bush graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jshaden23ho2021',
         name: 'Joe Haden Pittsburgh Steelers Nike Home Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1418,7 +1373,6 @@ const data = {
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and Joe Haden graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
 {
-        _id: 'jshaden23aw2021',
         name: 'Joe Haden Pittsburgh Steelers Nike Away Jersey',
         catagory: 'jersey',
         team: 'Pittsburgh Steelers',
@@ -1441,7 +1395,6 @@ const data = {
 // lids
 
 {
-        _id: 'hapens472021',
         name: 'Pittsburgh Penguins \'47 Dark Haze Solo Flex Hat',
         catagory: 'hat',
         team: 'Pittsburgh Penguins',
@@ -1460,7 +1413,6 @@ const data = {
         description: 'Finish off your outfit in sleek style with this Pittsburgh Penguins Dark Haze Solo flex hat from \'47. The unique two-panel construction features official Pittsburgh Penguins graphics and a sublimated design. Plus, the stretch closure will give you a personalized fit for lasting comfort.',
     },
         {
-        _id: 'hapensfanatics2021',
         name: 'Pittsburgh Penguins Fanatics Team Pride Cuffed Knit Hat',
         catagory: 'hat',
         team: 'Pittsburgh Penguins',
@@ -1479,7 +1431,6 @@ const data = {
         description: 'When the temperature drops, it means one thing: time to bust out your cold weather game day gear! When you get to the hat, though, you realize you need a new one. That\'s where this Pittsburgh Penguins Team Pride cuffed knit hat with pom can help out. Distinctive Pittsburgh Penguins graphics on this Fanatics Branded cap will have everyone knowing you\'re a devoted fan.',
     },
 {
-        _id: 'hapensdraft2021',
         name: 'Pittsburgh Penguins Fanatics NHL Draft Pro Hat',
         catagory: 'hat',
         team: 'Pittsburgh Penguins',
@@ -1498,7 +1449,6 @@ const data = {
         description: 'The 2020 NHL Draft will be one of the most pivotal events of the season. Make sure you are prepared by picking up this Pittsburgh Penguins Authentic Pro Flex Hat from Fanatics Branded. It features incredible graphics that will advertise your commitment to the team. This headwear will be a great way to welcome the newest members of the Pittsburgh Penguins during the draft.',
     },
 {
-        _id: 'hapensdetails2021',
         name: 'Pittsburgh Penguins Fanatics Details Flex Hat',
         catagory: 'hat',
         team: 'Pittsburgh Penguins',
@@ -1517,7 +1467,6 @@ const data = {
         description: 'You are super psyched to head to the arena to watch the Pittsburgh Penguins dominate on the ice. Express that ferocity by putting on this Pittsburgh Penguins Details flex hat. The electrifying Pittsburgh Penguins graphics on this Fanatics Branded cap will help you broadcast that loyalty with ease.',
     },
 {
-        _id: 'hastesideline2021',
         name: 'Pittsburgh Steelers New Era NFL Sideline Hat',
         catagory: 'hat',
         team: 'Pittsburgh Steelers',
@@ -1536,7 +1485,6 @@ const data = {
         description: 'Take your fandom with you everywhere you go by rocking this striking 2020 NFL Sideline Official 39THIRTY Flex Hat! Featuring an authentic Pittsburgh Steelers logo and impressive details, this stylish New Era hat is the perfect choice for taking your team commitment to the next level. Not only is this the same hat worn by staff and players during games, it\'s the perfect addition to your gameday collection.',
     },
 {
-        _id: 'hasterally2021',
         name: 'Pittsburgh Steelers New Era Rally Cry Flex Hat',
         catagory: 'hat',
         team: 'Pittsburgh Steelers',
@@ -1555,7 +1503,6 @@ const data = {
         description: 'You are one die-hard Pittsburgh Steelers fan and love to show off that unwavering loyalty as often as possible. Accomplish your goal when you put on this Pittsburgh Steelers Rally Cry 39THIRTY flex hat from New Era. This cap features the Pittsburgh Steelers\' rallying cry embroidered on the crown, along with their logo, perfect for highlighting your devotion to the team.',
     },
 {
-        _id: 'haste2021',
         name: 'Pittsburgh Steelers New Era AFC North Division Champions Hat',
         catagory: 'hat',
         team: 'Pittsburgh Steelers',
@@ -1574,7 +1521,6 @@ const data = {
         description: 'Put your Pittsburgh Steelers pride on full display—they\'re the 2020 AFC North Division Champions! Rock this New Era 9TWENTY Adjustable Hat to let everyone know how proud you are to be a Pittsburgh Steelers fan. Crisp graphics make this unlike any other gear in your collection.',
     },
 {
-        _id: 'hasteoil2021',
         name: 'Pittsburgh Steelers 47 Oil Cloth Clean Up Hat',
         catagory: 'hat',
         team: 'Pittsburgh Steelers',
@@ -1593,7 +1539,6 @@ const data = {
         description: 'Complete your game day look with a fitting accessory when you grab this Pittsburgh Steelers Oil Cloth Clean Up adjustable hat from \'47. This understated cap features faded and worn details that will let everyone know that you\'re a storied Pittsburgh Steelers fan that\'s been through the team\'s highs and lows. Pair this lid with your favorite team tee to give your get up a double dose of fandom.',
     },
 {
-        _id: 'hastegriswold2021',
         name: 'Pittsburgh Steelers New Era Griswold Hat',
         catagory: 'hat',
         team: 'Pittsburgh Steelers',
@@ -1612,7 +1557,6 @@ const data = {
         description: 'Whether you\'re heading to watch the Pittsburgh Steelers play, or simply looking to showcase your fandom in your day-to-day, you need this Griswold 9FIFTY snapback from New Era. The throwback wordmark graphics on the crown will add that vintage style to your headwear selection you\'ve been searching for. This Pittsburgh Steelers cap is sure to give your game day look a boost.',
     },
 {
-        _id: 'hapirfield2021',
         name: 'Pittsburgh Pirates New Era On Field Hat',
         catagory: 'hat',
         team: 'Pittsburgh Pirates',
@@ -1631,7 +1575,6 @@ const data = {
         description: 'Never stop sporting your Pittsburgh Pirates pride with this Authentic Collection On-Field 59FIFTY fitted hat from New Era. It\'s sure to be a standout in your collection of team gear with its unmistakable colors and moisture-wicking fabric. The raised Pittsburgh Pirates logo embroidered on the front of this lid will prove that it\'s meant for a die-hard fan like you.',
     },
 {
-        _id: 'hapirlow2021',
         name: 'Pittsburgh Pirates New Era Low Profile Hat',
         catagory: 'hat',
         team: 'Pittsburgh Pirates',
@@ -1650,7 +1593,6 @@ const data = {
         description: 'Make a statement on game day with a unique piece of headwear by donning this Pittsburgh Pirates Low Profile 59FIFTY fitted hat from New Era. Designed with a black and white color scheme, this cap features an exclusive take on the Pittsburgh Pirates logo. Complete with a fitted closure and a structured fit, this hat is a comfortable and stylish way to represent your favorite team in baseball.',
     },
 {
-        _id: 'hapircore2021',
         name: 'Pittsburgh Pirates New Era Core Classic Hat',
         catagory: 'hat',
         team: 'Pittsburgh Pirates',
@@ -1669,7 +1611,6 @@ const data = {
         description: 'Heading to the ballpark, you get a whiff of the hot dogs and popcorn and know you\'re set for a fantastic game. Now you can feel like you\'re reliving your experience every time you put on this Pittsburgh Pirates Alternate Replica Core Classic 9TWENTY adjustable hat from New Era. This hat features embroidered Pittsburgh Pirates graphics on the crown and is a great way to make sure your fandom for the team never dissipates.',
     },
 {
-        _id: 'hapirblack2021',
         name: 'Pittsburgh Pirates New Era Black On Black Hat',
         catagory: 'hat',
         team: 'Pittsburgh Pirates',
@@ -1688,7 +1629,6 @@ const data = {
         description: 'Head to the ballpark sporting this elite Pittsburgh Pirates Black on Black 9FIFTY Team Snapback adjustable hat from New Era and take the title as the #1 fan! With an all-black color and sweet raised embroidery, this cap will help fellow fans spot your team pride from across the crowd. Cheer on your beloved Pittsburgh Pirates in style by adding this quality cap to your look!',
     },
 {
-        _id: 'hapirvert2021',
         name: 'Pittsburgh Pirates New Era Vert Hat',
         catagory: 'hat',
         team: 'Pittsburgh Pirates',
@@ -1710,7 +1650,6 @@ const data = {
 //Shirts
 
 {
-        _id: 'shpirlegends2021',
         name: 'Pittsburgh Pirates Nike Team Logo Legend shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Pirates',
@@ -1729,7 +1668,6 @@ const data = {
         description: 'Active Pittsburgh Pirates fans will immediately notice a difference in their performance when they put on this Large Logo Legend T-shirt from Nike. It\'s constructed with Dri-FIT technology to keep its wearer cool and comfortable for longer periods of time. Its crisply detailed graphics will also be sure to shout out the team you love every time you wear it this season.',
     },
 {
-        _id: 'shpirmajestic2021',
         name: 'Bryan Reynolds Pittsburgh Pirates Majestic shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Pirates',
@@ -1748,7 +1686,6 @@ const data = {
         description: 'You love to cheer on the Pittsburgh Pirates during every game. Show your passion with this Bryan Reynolds Name & Number T-shirt from Majestic. With crisp graphics, this striking tee will fit right in with your Pittsburgh Pirates fan gear.',
     },
 {
-        _id: 'shpircooper2021',
         name: 'Roberto Clemente Pittsburgh Pirates Cooperstown shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Pirates',
@@ -1767,7 +1704,6 @@ const data = {
         description: 'Roberto Clemente is an icon in Pittsburgh Pirates history. Show your respect for one of the greatest to ever step on the diamond with this Cooperstown Collection Name and Number T-shirt from Nike. Its vintage design pays tribute to a bygone era so that you can always have a piece of history with you for all present and future seasons.',
     },
 {
-        _id: 'shpirpanel2021',
         name: 'Pittsburgh Pirates Wordmark Panel shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Pirates',
@@ -1786,7 +1722,6 @@ const data = {
         description: 'No matter what you\'ve got going on in your life, you do your best to highlight your intense Pittsburgh Pirates fervor wherever you go. Continue to effortlessly assert yourself as the most devoted fan when you slip on this engaging Wordmark Panel T-shirt. With bold Pittsburgh Pirates graphics on the front, everyone will know which squad you\'re pushing for when you sport this impressive tee!',
     },
 {
-        _id: 'shpirdual2021',
         name: 'Pittsburgh Pirates Under Armour Dual Logo shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Pirates',
@@ -1805,7 +1740,6 @@ const data = {
         description: 'Get the perfect look for the next game day with this impressive Pittsburgh Pirates top. The team-inspired design of this epic Duel Logo tri-blend tank top from Under Armour will make it clear that your fandom will never fade. It\'ll be difficult for anyone to contest your dedication to the Pittsburgh Pirates when they check out the crisp team graphics on this elite top.',
     },
 {
-        _id: 'shpirsteel2021',
         name: 'Pittsburgh Pirates Fanatics Steel City shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Pirates',
@@ -1824,7 +1758,6 @@ const data = {
         description: 'If you\'re searching for the best tee to help you show off your die-hard Pittsburgh Pirates pride, you\'re in luck! This Steel City Baseball tri-blend T-shirt from Fanatics Branded is the perfect choice when you want to show your enthusiasm for your favorite baseball players. The crisp Pittsburgh Pirates graphics and casual will ensure that this shirt stays in regular rotation in your closet.',
     },
 {
-        _id: 'shpenssecond2021',
         name: 'Pittsburgh Penguins Fanatics Secondary Logo shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Penguins',
@@ -1843,7 +1776,6 @@ const data = {
         description: 'You\'re the biggest NHL fan and love to show off your Pittsburgh Penguins pride. Put your passion on display with this one-of-a-kind Special Edition Secondary Logo T-Shirt from Fanatics Branded. Built with exclusive graphics and vibrant colors, it\'s just what you need to prove your loyalty to the Pittsburgh Penguins is unmatched.',
     },
 {
-        _id: 'shpensarch2021',
         name: 'Pittsburgh Penguins Fanatics Victory Arch shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Penguins',
@@ -1862,7 +1794,6 @@ const data = {
         description: 'You\'re the biggest NHL fan and love to show off your Pittsburgh Penguins pride. Put your passion on display with this one-of-a-kind Special Edition Victory Arch Tri-Blend Long Sleeve T-Shirt from Fanatics Branded. Built with exclusive graphics and vibrant colors, it\'s just what you need to prove your loyalty to the Pittsburgh Penguins is unmatched.',
     },
 {
-        _id: 'shpensprime2021',
         name: 'Pittsburgh Penguins Fanatics Primary Logo shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Penguins',
@@ -1881,7 +1812,6 @@ const data = {
         description: 'You\'re the biggest NHL fan and love to show off your Pittsburgh Penguins pride. Put your passion on display with this one-of-a-kind Special Edition Primary Logo Long Sleeve T-Shirt from Fanatics Branded. Built with exclusive graphics and vibrant colors, it\'s just what you need to prove your loyalty to the Pittsburgh Penguins is unmatched.',
     },
 {
-        _id: 'shpensicon2021',
         name: 'Pittsburgh Penguins Fanatics Women\'s Icon Lace shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Penguins',
@@ -1900,7 +1830,6 @@ const data = {
         description: 'You\'ve been looking for an awesome tee to enhance your game day ensemble, but haven\'t found the right one. Well search no more, because this awesome Pittsburgh Penguins Iconic lace-up V-neck T-shirt from Fanatics Branded is perfect for you! It features stunning Pittsburgh Penguins graphics on the chest, so whenever you head to the arena, people will know your support for the team can\'t be beat.',
     },
 {
-        _id: 'shpensslapshot2021',
         name: 'Pittsburgh Penguins Fanatics Icon Slapshot shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Penguins',
@@ -1919,7 +1848,6 @@ const data = {
         description: 'Your Pittsburgh Penguins fandom is endless. Show off your team spirit with this Fanatics Branded Iconic Slapshot long sleeve T-shirt. With crisp Pittsburgh Penguins graphics and a stylish design, this tee will quickly become your favorite piece of fan gear.',
     },
 {
-        _id: 'shpenssmoke2021',
         name: 'Pittsburgh Penguins Fanatics Smoked shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Penguins',
@@ -1938,7 +1866,6 @@ const data = {
         description: 'The Pittsburgh Penguins are ready to step back onto the ice for another highlight-filled game against their NHL rivals. Now it\'s your turn to prepare for the puck to drop on all the action by picking up this Fanatics Branded Arch Smoke T-shirt! It\'s made with comfy material and proudly displays your favorite team\'s name across the chest. After one look at this tee\'s smoky graphics, everyone will know your fandom runs deep.',
     },
 {
-        _id: 'shstefan2021',
         name: 'Pittsburgh Steelers Nike Fan Gear shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Steelers',
@@ -1957,7 +1884,6 @@ const data = {
         description: 'You\'re a true-blue Pittsburgh Steelers fan and aren\'t afraid to let everyone know it. Put your hardcore dedication to your favorite team in the league on display for all to see by gearing up in this Fan Gear Playbook long sleeve T-shirt from Nike. Its eye-capturing Pittsburgh Steelers graphics on the front will pop whether you\'re seen cheering in the stands or at home. If you\'re as big a supporter as you claim, make this long sleeve top a go-to choice when you need game day attire.',
     },
 {
-        _id: 'shstecurtain2021',
         name: 'Pittsburgh Steelers Fanatics Women\'s Steel Curtain shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Steelers',
@@ -1976,7 +1902,6 @@ const data = {
         description: 'Represent your Pittsburgh Steelers spirit with this Steel Curtain State V-neck T-shirt. This Fanatics Branded top includes the Pittsburgh Steelers logo along with the well-known team slogan representing the famous defensive line. Pair this top with your favorite jeans and you\'ll always show your loyalty to the Pittsburgh Steelers.',
     },
 {
-        _id: 'shstechamps2021',
         name: 'Pittsburgh Steelers AFC North Divison Champions shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Steelers',
@@ -1995,7 +1920,6 @@ const data = {
         description: 'Put your Pittsburgh Steelers pride on full display—they\'re the 2020 AFC North Division Champions! Rock this Fanatics Branded Flying High T-Shirt to let everyone know how proud you are to be a Pittsburgh Steelers fan. Crisp graphics make this unlike any other gear in your collection.',
     },
 {
-        _id: 'shsteperf2021',
         name: 'Pittsburgh Steelers Nike Performance shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Steelers',
@@ -2014,7 +1938,6 @@ const data = {
         description: 'The Pittsburgh Steelers are going to need you to give them everything you\'ve got this season. Show everyone just how much of a fan you are by rocking this Icon T-shirt from Nike. It features a crisp Pittsburgh Steelers logo and wordmark inside the silhouette of a football for the ultimate game day look, while its Dri-FIT technology works to keep you comfortable all day long.',
     },
 {
-        _id: 'shstelogo2021',
         name: 'Pittsburgh Steelers Nike Primary Logo shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Steelers',
@@ -2033,7 +1956,6 @@ const data = {
         description: 'There\'s just something about the Pittsburgh Steelers and the game of football that keeps you coming back for more. Be ready for that unbeatable atmosphere this season by grabbing this Primary Logo T-shirt from Nike. Featuring your team\'s logo front and center, this tee will help you comfortably support your Pittsburgh Steelers each and every game.',
     },
 {
-        _id: 'shstemore2021',
         name: 'Pittsburgh Steelers Fanatics Want It More shirt',
         catagory: 'shirt',
         team: 'Pittsburgh Steelers',

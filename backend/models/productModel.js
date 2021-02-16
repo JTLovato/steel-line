@@ -14,9 +14,15 @@ const reviewSchema = new mongoose.Schema(
 const productSchema = new mongoose.Schema(
   {
     name: { type: String, required: true, unique: true },
+    player: { type: String },
+    team: { type: String },
+    playerNum: { type: Number },
+    position: { type: String },
+    profile: { type: String },
     seller: { type: mongoose.Schema.Types.ObjectID, ref: 'User' },
     image: { type: String, required: true },
     brand: { type: String, required: true },
+    style: { type: String, required: true },
     category: { type: String, required: true },
     description: { type: String, required: true },
     price: { type: Number, required: true },
