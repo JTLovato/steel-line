@@ -110,9 +110,11 @@ function App() {
                   Admin <i className="fa fa-caret-down"></i>
                 </Link>
                 <ul className="dropdown-content">
-                  <li>
-                    <Link to="/dashboard">Dashboard</Link>
-                  </li>
+                  {/* coming soon */}
+                    {/* <li>
+                      <Link to="/dashboard">Dashboard</Link>
+                    </li> */}
+                  {/* coming soon */}
                   <li>
                     <Link to="/productlist">Products</Link>
                   </li>

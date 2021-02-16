@@ -27,7 +27,7 @@ body {
     'footer';
   grid-template-columns: 1fr;
   grid-template-rows: 5rem 1fr 5rem;
-  height: 100%;
+  min-height: 100vh;
 }
 header {
   grid-area: header;
@@ -66,7 +66,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #ff8000;
+  color: #f0c040;
 }
 
 ul {
@@ -146,11 +146,12 @@ a.brand {
 }
 
 .badge {
-  background-color: #f02020;
-  color: #ffffff;
+  background-color: #f0c040;
+  color: #000;
   border-radius: 50%;
   padding: 0.2rem 0.7rem;
   font-size: 1.4rem;
+  font-weight: 700;
   margin-left: 0.2rem;
 }
 .row {
@@ -299,6 +300,11 @@ img.large {
 .card-body > * {
   margin-bottom: 0.5rem;
 }
+
+.order-card {
+  width: 80%;
+}
+
 .price {
   font-size: 2rem;
   font-weight: 700;
@@ -357,10 +363,11 @@ img.large {
   padding: 1rem;
   border: 0.1rem solid transparent;
   border-radius: 0.5rem;
+  text-align: center;
 }
 .alert-info {
-  color: #2020a0;
-  background-color: #e0e0ff;
+  color: #000;
+  background-color: #f0c040;
 }
 .alert-danger {
   color: #a02020;
@@ -521,3 +528,30 @@ img.large {
 img.card-large {
   width: 75%;
 }
+
+.update-name {
+  width: 100%;
+  text-align: center;
+}
+
+.update-name h1 {
+  font-size: 3rem;
+}
+
+.margin-sides {
+  margin: 0 1rem;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.out-of-order {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.payment-method {
+  margin-top: 2rem; 
+}
+

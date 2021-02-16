@@ -80,12 +80,12 @@ export default function OrderScreen(props) {
     <MessageBox variant="danger">{error}</MessageBox>
   ) : (
     <div>
-      <h1>Order {order._id}</h1>
+      <h1 className="margin-sides">Order #{order._id}</h1>
       <div className="row top">
         <div className="col-2">
           <ul>
             <li>
-              <div className="card card-body">
+              <div className="card card-body order-card">
                 <h2>Shipping</h2>
                 <p>
                   <strong>Name:</strong> {order.shippingAddress.fullName} <br />
@@ -104,7 +104,7 @@ export default function OrderScreen(props) {
               </div>
             </li>
             <li>
-              <div className="card card-body">
+              <div className="card card-body order-card">
                 <h2>Payment</h2>
                 <p>
                   <strong>Method:</strong> {order.paymentMethod}
@@ -119,7 +119,7 @@ export default function OrderScreen(props) {
               </div>
             </li>
             <li>
-              <div className="card card-body">
+              <div className="card card-body order-card">
                 <h2>Order Items</h2>
                 <ul>
                   {order.orderItems.map((item) => (
@@ -132,14 +132,15 @@ export default function OrderScreen(props) {
                             className="small"
                           ></img>
                         </div>
-                        <div className="min-30">
+                        <div>
+                        <div className="min-30 text-right">
                           <Link to={`/product/${item.product}`}>
                             {item.name}
                           </Link>
                         </div>
-
                         <div>
                           {item.qty} x ${item.price} = ${item.qty * item.price}
+                        </div>
                         </div>
                       </div>
                     </li>
@@ -150,7 +151,7 @@ export default function OrderScreen(props) {
           </ul>
         </div>
         <div className="col-1">
-          <div className="card card-body">
+          <div className="card card-body order-card">
             <ul>
               <li>
                 <h2>Order Summary</h2>

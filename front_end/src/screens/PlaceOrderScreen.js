@@ -41,7 +41,7 @@ useEffect(() => {
         <div className="col-2">
           <ul>
             <li>
-              <div className="card card-body">
+              <div className="card card-body order-card">
                 <h2>Shipping</h2>
                 <p>
                   <strong>Name:</strong> {cart.shippingAddress.fullName} <br />
@@ -52,7 +52,7 @@ useEffect(() => {
               </div>
             </li>
             <li>
-              <div className="card card-body">
+              <div className="card card-body order-card">
                 <h2>Payment</h2>
                 <p>
                   <strong>Method:</strong> {cart.paymentMethod}
@@ -60,7 +60,7 @@ useEffect(() => {
               </div>
             </li>
             <li>
-              <div className="card card-body">
+              <div className="card card-body order-card">
                 <h2>Order Items</h2>
                 <ul>
                   {cart.cartItems.map((item) => (

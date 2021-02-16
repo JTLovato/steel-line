@@ -51,8 +51,8 @@ export default function ProfileScreen() {
   return (
     <div>
       <form className="form" onSubmit={submitHandler}>
-        <div>
-          <h1>User Profile</h1>
+        <div className="update-name">
+          <h1>Update Your Profile</h1>
         </div>
         {loading ? (
           <LoadingBox></LoadingBox>
@@ -80,7 +80,7 @@ export default function ProfileScreen() {
               ></input>
             </div>
             <div>
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Change Email</label>
               <input
                 id="email"
                 type="email"
@@ -90,7 +90,7 @@ export default function ProfileScreen() {
               ></input>
             </div>
             <div>
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password">Change Password</label>
               <input
                 id="password"
                 type="password"

@@ -24,7 +24,7 @@ export default function UserListScreen(props) {
       });
 }, [dispatch, successDelete]);
 const deleteHandler = (user) => {
-  if (window.confirm('Are you sure?')) {
+  if (window.confirm('Are You Sure? You Cannot Bring Them Back.')) {
     dispatch(deleteUser(user._id));
   }
 };
