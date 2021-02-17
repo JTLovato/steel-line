@@ -62,26 +62,15 @@ export default function ProductScreen(props) {
 
             {/* left side */}
             <div className="col-2 yellow">
+              <div className="city">
+                <p>PITTSBURGH</p>
+              </div>
               <div className="product-highlight">
                 <img
                   className="large"
                   src={product.image}
                   alt={product.name}
                 ></img>
-                <div className="image-row">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                  ></img>
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                  ></img>
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                  ></img>
-                </div>
               </div>
             </div>
 
@@ -100,6 +89,14 @@ export default function ProductScreen(props) {
                 <li className="price">Price : ${product.price}</li>
                 <li>
                   Description:
+                  <div>
+        {product.countInStock < 11 && product.countInStock > 0 &&
+          <h1>Almost Gone!</h1>
+        }
+            {product.countInStock === 0 &&
+          <h1>Sold Out!</h1>
+        }
+        </div>
                   <p>{product.description}</p>
                   <Link className="return" to="/">Return To Results</Link>
                 </li>
@@ -169,20 +166,22 @@ export default function ProductScreen(props) {
               </div>
             </div>
           </div>
-          <div>
-            <h2 id="reviews">Reviews</h2>
+          <div className="no-reviews">
             {product.reviews.length === 0 && (
-              <MessageBox>There is no review</MessageBox>
+              <MessageBox>There Are No Reviews...Yet</MessageBox>
             )}
             <ul>
+              <h1>Reviews</h1>
+              <div className="review-container">
               {product.reviews.map((review) => (
-                <li key={review._id}>
-                  <strong>{review.name}</strong>
-                  <Rating rating={review.rating} caption=" "></Rating>
-                  <p>{review.createdAt.substring(0, 10)}</p>
-                  <p>{review.comment}</p>
-                </li>
+                    <li className="reviews" key={review._id}>
+                      <strong>{review.name}</strong>
+                      <Rating rating={review.rating} caption=" "></Rating>
+                      <p>{review.createdAt.substring(0, 10)}</p>
+                      <p>{review.comment}</p>
+                    </li>
               ))}
+              </div>
               <li>
                 {userInfo ? (
                   <form className="form" onSubmit={submitHandler}>

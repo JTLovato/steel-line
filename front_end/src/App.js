@@ -192,7 +192,7 @@ function App() {
              <Route
            path="/search/category/:category/name/:name/min/:min/max/:max/rating/:rating/order/:order/pageNumber/:pageNumber"
            component={SearchScreen}
-            exact
+           exact
           ></Route>
           <PrivateRoute
             path="/profile"
