@@ -15,13 +15,26 @@ export default function ProductScreen(props) {
       ) : error ? (
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (
+        <div className="card card-body yellow ">
         <div>
           <div className="row top">
             <div className="col-1">
               <ul>
                 <li>
-                    <div className="player-details player-top">{product.playerNum}</div>
+                    <div className="player-details player-top-left">{product.playerNum}</div>
+                    {/* <div className="player-details player-top-right">
+                {product.team == "Pittsburgh Penguins" &&
+                  <img src="../img/icons/penguinslogo.png"></img>
+                }
+                    {product.team == "Pittsburgh Steelers" && 
+                    <img src="../img/icons/steelerslogo.png"></img>
+                }
+                {product.team == "Pittsburgh Pirates" && 
+                    <img src="../img/icons/pirateslogo.png"></img>
+                }
+                </div> */}
                 </li>
+
                 <div className="col-2">
                     <img
                         className="card-large profile-pic"
@@ -39,9 +52,11 @@ export default function ProductScreen(props) {
                     </li>
                     <span className="name-span"></span>
                     </div>
+                    
               </ul>
             </div>
           </div>
+        </div>
         </div>
         )}
    </div>

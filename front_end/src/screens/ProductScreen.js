@@ -158,12 +158,9 @@ export default function ProductScreen(props) {
                   )}
                 </ul>
               </div>
-              <div className="card card-body yellow ">
-                
-              <Details></Details>
-
-
-              </div>
+                {product.profile !== '' &&  
+                <Details></Details>
+                } 
             </div>
           </div>
           <div className="no-reviews">

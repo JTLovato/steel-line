@@ -27,6 +27,7 @@ import UserEditScreen from './screens/UserEditScreen';
 import SearchScreen from './screens/SearchScreen';
 
 
+
 function App() {
   const cart = useSelector((state) => state.cart);
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false)
@@ -130,6 +131,11 @@ function App() {
           </div>
           </div>
         </header>
+        <div className="discounts">
+          <p>DEAL ENDS SOON!</p>
+          <h1>FREE SHIPPING SITEWIDE ON ORDERS OVER $100!</h1>
+          <h6>*Exclusions Apply*</h6>
+          </div>
         <aside className={sidebarIsOpen ? 'open': ''}>
                 <ul className="categories">
                   <li>
@@ -154,11 +160,7 @@ function App() {
           )}
                 </ul>
         </aside>
-        
 
-
-
-        
         <main>
         <Route path="/cart/:id?" component={CartScreen}></Route>
         <Route path="/product/:id" component={ProductScreen} exact></Route>
