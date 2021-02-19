@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { BrowserRouter, Link, Route } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import PrivateRoute from './components/PrivateRoute';
 import { signout } from './actions/userActions';
 import SearchBox from './components/SearchBox'
@@ -25,6 +25,7 @@ import OrderListScreen from './screens/OrderListScreen';
 import UserListScreen from './screens/UserListScreen';
 import UserEditScreen from './screens/UserEditScreen';
 import SearchScreen from './screens/SearchScreen';
+import PageNotFound from './screens/PageNotFoundScreen';
 
 
 
@@ -50,9 +51,32 @@ function App() {
     dispatch(listProductCategories())
   }, [dispatch])
 
+  const submitHandler = (e) => {
+    e.preventDefault();
+    const newsletter = document.getElementById("newsletter");
+    const thanks = document.getElementById("thanks");
+    newsletter.style.display = "none";
+    thanks.style.display = "block";
+
+  };
+
+  const year = new Date().getFullYear();
+
+
+  const NoMatchPage = () => {
+    return (
+      <PageNotFound />
+    );
+  };
+  
   return (
     <BrowserRouter>
       <div className="grid-container">
+      <div className="discounts">
+          <p>DEAL ENDS SOON!</p>
+          <h1>FREE SHIPPING SITEWIDE ON ORDERS OVER $100!</h1>
+          <h6>*Exclusions Apply*</h6>
+          </div>
         <header className="row heading">
           <div className="center header-left">
             <button
@@ -131,11 +155,6 @@ function App() {
           </div>
           </div>
         </header>
-        <div className="discounts">
-          <p>DEAL ENDS SOON!</p>
-          <h1>FREE SHIPPING SITEWIDE ON ORDERS OVER $100!</h1>
-          <h6>*Exclusions Apply*</h6>
-          </div>
         <aside className={sidebarIsOpen ? 'open': ''}>
                 <ul className="categories">
                   <li>
@@ -154,7 +173,11 @@ function App() {
               categories.map((c) => (
                 <li key={c}>
                   <Link to={`/search/category/${c}`}
-                  onClick={() => setSidebarIsOpen(false)}>{c}</Link>
+                  onClick={() => setSidebarIsOpen(false)}>
+                    {/* <img src={`../img/headshots/${c}.jpg`}></img> */}
+                    {c}s
+                    
+                    </Link>
                 </li>
               ))
           )}
@@ -162,6 +185,7 @@ function App() {
         </aside>
 
         <main>
+          <Switch>
         <Route path="/cart/:id?" component={CartScreen}></Route>
         <Route path="/product/:id" component={ProductScreen} exact></Route>
         <Route
@@ -221,8 +245,47 @@ function App() {
             component={UserEditScreen}
           ></AdminRoute>
           <Route path="/" component={HomeScreen} exact></Route>
+          <Route component={NoMatchPage} />
+          </Switch>
+          <img className="bridge" src="../img/bridge.png"></img>
         </main>
-        <footer className="row center">All rights reserved</footer>
+        <footer>
+          <div className="contact-container">
+                <div className="contact-container-card actual">
+                  <p>Contact Us</p>
+                  <div>
+                    <a href = "mailto: johnsawebdev@gmail.com.com">Email: johnsawebdev@gmail.com</a>
+                    <a href="tel:682-283-1972">Call: (682) 283-1972</a>
+                  </div>
+                </div>
+                <div className="contact-container-card">
+                  <p>Follow Us</p>
+                  <div>
+                    <a href=""><i className="fa fa-2x fa-facebook-f"></i></a>
+                    <a href=""><i className="fa fa-2x  fa-twitter"></i></a>
+                    <a href=""><i className="fa fa-2x  fa-instagram"></i></a>
+                    <a href=""><i className="fa fa-2x  fa-linkedin"></i></a>
+                  </div>
+                </div>
+                <div className="contact-container">
+                  <form id="newsletter" onSubmit={submitHandler}>
+                    <label htmlFor="newsletter">Stay Connected</label>
+                    <label htmlFor="newsletter">Sign up for our email now for great deals</label>
+                    <div className="newsletter-submit">
+                      <input id="newsletter" type="text" className="newsletter-input" placeholder="Enter Email Here"></input>
+                      <button type="submit" className="newsletter-button" >Sign Up</button>
+                    </div>
+                  </form>
+                  <div id="thanks" className="thanks">
+                    <h1>Thanks!</h1>
+                    <p>You'll be signed up for all the news and great deals from now on.</p>
+                  </div>
+                </div>
+              </div>
+          <div className="bottom-footer">
+                <a href="">Privacy Policy</a> <p>////</p> <a href="">Terms Of Use</a> <p>////</p> <a href="#">&copy; {year} Steel | Line</a>
+          </div>
+          </footer>
       </div>
     </BrowserRouter>
 );

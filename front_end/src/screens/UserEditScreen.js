@@ -43,7 +43,7 @@ export default function UserEditScreen(props) {
     dispatch(updateUser({ _id: userId, name, email, isAdmin }));
   };
   return (
-    <div>
+    <div className="height">
       <form className="form" onSubmit={submitHandler}>
         <div>
           <h1>Edit User {name}</h1>

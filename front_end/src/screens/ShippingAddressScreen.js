@@ -25,7 +25,7 @@ export default function ShippingAddressScreen(props) {
     props.history.push('/payment');
   };
   return (
-    <div>
+    <div className="height">
       <CheckoutSteps step1 step2></CheckoutSteps>
       <form className="form" onSubmit={submitHandler}>
         <div>

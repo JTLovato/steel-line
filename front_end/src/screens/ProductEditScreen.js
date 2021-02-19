@@ -99,7 +99,7 @@ export default function ProductEditScreen(props) {
 
 
   return (
-    <div>
+    <div className="height">
       <form className="form product-form" onSubmit={submitHandler}>
         <div>
           <h1>Edit Product {productId}</h1>

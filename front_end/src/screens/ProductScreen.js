@@ -51,7 +51,7 @@ export default function ProductScreen(props) {
     };
     
     return (
-    <div>
+    <div className="height">
       {loading ? (
         <LoadingBox></LoadingBox>
       ) : error ? (

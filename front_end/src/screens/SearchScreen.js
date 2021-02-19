@@ -45,18 +45,18 @@ export default function SearchScreen(props) {
 }, [category, team, dispatch, max, min, name, order, rating, pageNumber]);
 
   const getFilterUrl = (filter) => {
+    const filterMin = filter.min ? filter.min : filter.min === 0 ? 0 : min;
+    const filterMax = filter.max ? filter.max : filter.max === 0 ? 0 : max;
     const filterPage = filter.page || pageNumber;
     const filterCategory = filter.category || category;
     const filterName = filter.name || name;
     const filterRating = filter.rating || rating;
     const sortOrder = filter.order || order;
-    const filterMin = filter.min ? filter.min : filter.min === 0 ? 0 : min;
-    const filterMax = filter.max ? filter.max : filter.max === 0 ? 0 : max;
-    return `/search/category/${filterCategory}/name/${filterName}/min/${filterMin}/max/${filterMax}/rating/${filterRating}/order/${sortOrder}/pageNumber/${filterPage}`;
+    return `/search/category/${filterCategory}/name/${filterName}/max/${filterMax}/min/${filterMin}/rating/${filterRating}/order/${sortOrder}/pageNumber/${filterPage}`;
   };
 
   return (
-    <div>
+    <div className="height">
       <div className="row margin-sides">
         {loading ? (
           <LoadingBox></LoadingBox>
@@ -73,9 +73,9 @@ export default function SearchScreen(props) {
               props.history.push(getFilterUrl({ order: e.target.value }));
             }}
           >
-            <option value="newest">Newest Arrivals</option>
-            <option value="lowest">Price: Low to High</option>
             <option value="highest">Price: High to Low</option>
+            <option value="lowest">Price: Low to High</option>
+            <option value="newest">Newest Arrivals</option>
             <option value="toprated">Avg. Customer Reviews</option>
           </select>
         </div>
@@ -154,12 +154,7 @@ export default function SearchScreen(props) {
               {products.length === 0 && (
                 <MessageBox>No Product Found</MessageBox>
               )}
-              <div className="row center">
-                {products.map((product) => (
-                  <Product key={product._id} product={product}></Product>
-                ))}
-              </div>
-              <div className="row center pagination">
+                         <div className="row center pagination">
                 {[...Array(pages).keys()].map((x) => (
                   <Link
                     className={x + 1 === page ? 'active' : ''}
@@ -168,6 +163,11 @@ export default function SearchScreen(props) {
                   >
                     {x + 1}
                   </Link>
+                ))}
+              </div>
+              <div className="row center">
+                {products.map((product) => (
+                  <Product key={product._id} product={product}></Product>
                 ))}
               </div>
             </>

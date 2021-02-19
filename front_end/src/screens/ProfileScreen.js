@@ -49,7 +49,7 @@ export default function ProfileScreen() {
     };
 
   return (
-    <div>
+    <div className="height">
       <form className="form" onSubmit={submitHandler}>
         <div className="update-name">
           <h1>Update Your Profile</h1>

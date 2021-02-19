@@ -31,6 +31,15 @@ export default function HomeScreen() {
               <Link to={`/search/name/pirates`} className="image-link"><img src="../img/shoppirates.png"></img></Link>
             </div>
 
+            <div className="shop-specifics">
+
+            <div className="secondary-row">
+            <Link to={`/search/category/jersey`} className=""><img src="../img/shopjerseys.png"></img></Link>
+            <Link to={`/search/category/hat`} className=""><img src="../img/shophats.png"></img></Link>
+            <Link to={`/search/category/shirt`} className=""><img src="../img/shopshirts.png"></img></Link>
+        </div>
+            </div>
+
             <div className="locations">
               <h1>LOCATIONS</h1>
               <div className="info-card-holder">
