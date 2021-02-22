@@ -44,7 +44,6 @@ productRouter.get(
         const count = await Product.count({
           ...sellerFilter,
           ...nameFilter,
-          // ...teamFilter,
           ...categoryFilter,
           ...priceFilter,
           ...ratingFilter,
@@ -53,7 +52,6 @@ productRouter.get(
     const products = await Product.find({
         ...sellerFilter, 
         ...nameFilter, 
-        // ...teamFilter,
         ...categoryFilter,
         ...priceFilter,
         ...ratingFilter,
@@ -70,11 +68,6 @@ productRouter.get('/categories', expressAsyncHandler( async (req, res) => {
   const categories = await Product.find().distinct('category');
   res.send(categories);
 }))
-
-// productRouter.get('/teams', expressAsyncHandler( async (req, res) => {
-//   const teams = await Product.find().distinct('team');
-//   res.send(teams);
-// }))
 
 productRouter.get(
   '/seed',
@@ -134,7 +127,6 @@ productRouter.post(
         product.name = req.body.name;
         product.price = req.body.price;
         product.image = req.body.image;
-        // product.team = req.body.team;
         product.category = req.body.category;
         product.brand = req.body.brand;
         product.countInStock = req.body.countInStock;

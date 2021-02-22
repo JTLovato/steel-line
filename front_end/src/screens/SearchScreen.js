@@ -6,7 +6,7 @@ import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import Product from '../components/Product';
 import Rating from '../components/Rating';
-import { prices, ratings } from '../utils';
+import { prices, ratings, teams } from '../utils';
 
 export default function SearchScreen(props) {
     const {
@@ -16,7 +16,7 @@ export default function SearchScreen(props) {
         min = 0,
         max = 0,
         rating = 0,
-        order = 'newest',
+        order = 'highest',
         pageNumber = 1,
       } = useParams();
   const dispatch = useDispatch();
@@ -31,20 +31,13 @@ export default function SearchScreen(props) {
     categories,
   } = productCategoryList;
 
-  // const productTeamList = useSelector((state) => state.productTeamList);
-  // const {
-  //   loading: loadingTeams,
-  //   error: errorTeams,
-  //   teams,
-  // } = productTeamList;
-
   useEffect(() => {
     dispatch(
       listProducts({
         pageNumber,
         name: name !== 'all' ? name : '',
+        team,
         category: category !== 'all' ? category : '',
-        // team: team !== 'all' ? team : '',
         min,
         max,
         rating,
@@ -54,16 +47,15 @@ export default function SearchScreen(props) {
 }, [category, team, dispatch, max, min, name, order, rating, pageNumber]);
 
   const getFilterUrl = (filter) => {
-    const filterMin = filter.min ? filter.min : filter.min === 0 ? 0 : min;
-    const filterMax = filter.max ? filter.max : filter.max === 0 ? 0 : max;
     const filterPage = filter.page || pageNumber;
     const filterCategory = filter.category || category;
     const filterName = filter.name || name;
-    const filterTeam = filter.team || team;
     const filterRating = filter.rating || rating;
     const sortOrder = filter.order || order;
-    return `/search/category/${filterCategory}/name/${filterName}/team/${filterTeam}/max/${filterMax}/min/${filterMin}/rating/${filterRating}/order/${sortOrder}/pageNumber/${filterPage}`;
-  };
+    const filterMin = filter.min ? filter.min : filter.min === 0 ? 0 : min;
+    const filterMax = filter.max ? filter.max : filter.max === 0 ? 0 : max;
+   return `/search/category/${filterCategory}/name/${filterName}/min/${filterMin}/max/${filterMax}/rating/${filterRating}/order/${sortOrder}/pageNumber/${filterPage}`;
+};
 
   return (
     <div className="height">
@@ -113,27 +105,23 @@ export default function SearchScreen(props) {
               </ul>
             )}
           </div>
-        {/* <h3>Teams</h3>
           <div>
-            {loadingTeams ? (
-              <LoadingBox></LoadingBox>
-            ) : errorTeams ? (
-              <MessageBox variant="danger">{errorTeams}</MessageBox>
-            ) : (
-              <ul>
-                {teams.map((t) => (
-                  <li key={t}>
-                    <Link
-                      className={t === team ? 'active' : ''}
-                      to={getFilterUrl({ team: t })}
-                    >
-                      {t}s
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div> */}
+            <h3>Teams</h3>
+            <ul>
+              {teams.map((t) => (
+                <li key={t.team}>
+                  <Link
+                    to={getFilterUrl({ team: t.team })}
+                    className={`${t.team}` === `${team}` ? 'active' : ''}
+                  >
+                        {t.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+
           <div>
             <h3>Price</h3>
             <ul>
@@ -191,6 +179,17 @@ export default function SearchScreen(props) {
               <div className="row center">
                 {products.map((product) => (
                   <Product key={product._id} product={product}></Product>
+                ))}
+              </div>
+              <div className="row center pagination">
+                {[...Array(pages).keys()].map((x) => (
+                  <Link
+                    className={x + 1 === page ? 'active' : ''}
+                    key={x + 1}
+                    to={getFilterUrl({ page: x + 1 })}
+                  >
+                    {x + 1}
+                  </Link>
                 ))}
               </div>
             </>

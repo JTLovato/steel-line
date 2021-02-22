@@ -20,6 +20,7 @@ export const prices = [
       max: 1000,
     },
   ];
+
   export const ratings = [
     {
       name: '4stars & up',
@@ -39,5 +40,22 @@ export const prices = [
     {
       name: '1stars & up',
       rating: 1,
+    },
+  ];
+
+  export const teams = [
+    {
+      name: 'Penguins',
+      team: 'Pittsburgh Penguins',
+    },
+  
+    {
+      name: 'Steelers',
+      team: 'Pittsburgh Steelers',
+    },
+
+    {
+      name: 'Pirates',
+      team: 'Pittsburgh Pirates',
     },
   ];

@@ -63,19 +63,6 @@ export const listProductCategories = () => async (dispatch) => {
   }
 };
 
-// export const listProductTeams = () => async (dispatch) => {
-//   dispatch({
-//     type: PRODUCT_TEAM_LIST_REQUEST,
-//   });
-//   try {
-//     const { data } = await Axios.get(`/api/products/teams`);
-//     dispatch({ type: PRODUCT_TEAM_LIST_SUCCESS, payload: data });
-//   } catch (error) {
-//     dispatch({ type: PRODUCT_TEAM_LIST_FAIL, payload: error.message });
-//   }
-// };
-
-
 export const detailsProduct = (productId) => async (dispatch) => {
     dispatch({ type: PRODUCT_DETAILS_REQUEST, payload: productId });
     try {

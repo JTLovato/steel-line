@@ -52,17 +52,6 @@ function App() {
     dispatch(listProductCategories())
   }, [dispatch])
 
-  // const productTeamList = useSelector((state) => state.productTeamList);
-  // const {
-  //   loading: loadingTeams,
-  //   error: errorTeams,
-  //   teams,
-  // } = productTeamList;
-
-  // useEffect(() => {
-  //   dispatch(listProductTeams())
-  // }, [dispatch])
-
   const submitHandler = (e) => {
     e.preventDefault();
     const newsletterSignup = document.getElementById("newsletter-signup");
@@ -85,11 +74,11 @@ function App() {
   return (
     <BrowserRouter>
       <div className="grid-container" id="top">
-      <div className="discounts">
+        <div className="discounts">
           <p>DEAL ENDS SOON!</p>
           <h1>FREE SHIPPING SITEWIDE ON ORDERS OVER $100!</h1>
           <h6>*Exclusions Apply*</h6>
-          </div>
+        </div>
         <header className="row heading">
           <div className="center header-left">
           <Link className="brand" to="/">
@@ -235,7 +224,7 @@ function App() {
         </aside>
 
         <main> 
-          {/* <Switch> */}
+          <Switch>
         <Route path="/cart/:id?" component={CartScreen}></Route>
         <Route path="/product/:id" component={ProductScreen} exact></Route>
         <Route
@@ -295,8 +284,8 @@ function App() {
             component={UserEditScreen}
           ></AdminRoute>
           <Route path="/" component={HomeScreen} exact></Route>
-          {/* <Route component={NoMatchPage} /> */}
-          {/* </Switch> */}
+          <Route component={NoMatchPage} />
+          </Switch>
           <img className="bridge" src="../img/bridge.png" alt="bridge design"></img>
         </main>
         <footer>
