@@ -169,55 +169,15 @@ function App() {
         </div>
         </header>
         <aside className={sidebarIsOpen ? 'open': ''}>
-                <ul className="categories">
-                  <li>
-                    <strong>Categories</strong>
+                <div className="categories">
                     <button onClick={() => setSidebarIsOpen(false)}
                       className="close-sidebar"
                       type="button">
                       <i className="fa fa-close"></i>
                     </button>
-                  </li>
-                  {loadingCategories ? (
-            <LoadingBox></LoadingBox>
-          ) : errorCategories ? (
-            <MessageBox variant="danger">{errorCategories}</MessageBox>
-          ) : (
-              categories.map((c) => (
-                <li key={c}>
-                  <Link to={`/search/category/${c}`}
-                  onClick={() => setSidebarIsOpen(false)}> 
-                     {c}s                   
-                    </Link>
-                </li>
-              ))
-          )}
-           {/* {loadingTeams ? (
-            <LoadingBox></LoadingBox>
-          ) : errorTeams ? (
-            <MessageBox variant="danger">{errorTeams}</MessageBox>
-          ) : (
-            teams.map((t) => (
-                <li key={t}>
-                  <Link to={`/search/team/${t}`}
-                  onClick={() => setSidebarIsOpen(false)}> 
-                     {t}
-                    </Link>
-                </li>
-              ))
-          )} */}
-                </ul>
-                
-          <div className=" row center ">
-            <div>
-            
-                    <strong>Categories</strong>
-                    <button onClick={() => setSidebarIsOpen(false)}
-                      className="close-sidebar"
-                      type="button">
-                      <i className="fa fa-close"></i>
-                    </button>
-                  
+                </div>
+          <div className=" row center aside">
+            <div className="search">               
               <Route 
                 render={({history}) => 
                 <SearchBox 
@@ -226,55 +186,45 @@ function App() {
               ></Route>
             </div>
             <div>
+            <div className="cart-hold">
               <Link to="/cart">
-                Cart
+                Your Cart
                 {cartItems.length > 0 && (
                   <span className="badge">{cartItems.length}</span>
                 )}
               </Link>
+              </div>
               {userInfo ? (
-                <div className="dropdown">
-                  <Link to="#">
-                    {userInfo.name} <i className="fa fa-caret-down"></i>{' '}
+                <div className="aside-items">
+                  <div className="aside-title">
+                    {userInfo.name}
+                  </div>         
+                  <div className="aside-place">   
+                  <Link to="/profile">User Profile</Link>              
+                  <Link to="/orderhistory">Order History</Link>
+                  <Link to="#signout" onClick={signoutHandler}>
+                    Sign Out
                   </Link>
-                  <ul className="dropdown-content">
-                  <li>
-                      <Link to="/profile">User Profile</Link>
-                    </li>
-                  <li>
-                      <Link to="/orderhistory">Order History</Link>
-                    </li>
-                    <li>
-                      <Link to="#signout" onClick={signoutHandler}>
-                        Sign Out
-                      </Link>
-                    </li>
-                  </ul>
+                  </div>
                 </div>
             ) : (
               <Link to="/signin">Sign In</Link>
             )}
               {userInfo && userInfo.isAdmin && (
-              <div className="dropdown">
-                <Link to="#admin">
-                  Admin <i className="fa fa-caret-down"></i>
-                </Link>
-                <ul className="dropdown-content">
+              <div>
+                <div className="aside-title">
+                  Admin Links
+                </div>
                   {/* coming soon */}
                     {/* <li>
                       <Link to="/dashboard">Dashboard</Link>
                     </li> */}
                   {/* coming soon */}
-                  <li>
+                  <div className="aside-place">
                     <Link to="/productlist">Products</Link>
-                  </li>
-                  <li>
                     <Link to="/orderlist">Orders</Link>
-                  </li>
-                  <li>
                     <Link to="/userlist">Users</Link>
-                  </li>
-                </ul>
+                    </div>
               </div>
             )}
           </div>
@@ -284,7 +234,7 @@ function App() {
 
         </aside>
 
-        <main>
+        <main> 
           {/* <Switch> */}
         <Route path="/cart/:id?" component={CartScreen}></Route>
         <Route path="/product/:id" component={ProductScreen} exact></Route>

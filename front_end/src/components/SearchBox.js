@@ -15,6 +15,7 @@ export default function SearchBox(props) {
                     type="text" 
                     name="q" 
                     id="q" 
+                    placeholder="Search..."
                     onChange={(e) => setName(e.target.value)}
                 ></input>
                 <button className="primary" type="submit">
