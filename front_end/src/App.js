@@ -5,9 +5,6 @@ import PrivateRoute from './components/PrivateRoute';
 import { signout } from './actions/userActions';
 import SearchBox from './components/SearchBox'
 import { listProductCategories } from './actions/productActions';
-// Import listProductTeams from '.actions/productActions when ready for deploy
-import LoadingBox from './components/LoadingBox';
-import MessageBox from './components/MessageBox'; 
 import AdminRoute from './components/AdminRoute';
 import CartScreen from './screens/CartScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -41,12 +38,6 @@ function App() {
     dispatch(signout());
   };
 
-  const productCategoryList = useSelector((state) => state.productCategoryList);
-  const {
-    loading: loadingCategories,
-    error: errorCategories,
-    categories,
-  } = productCategoryList;
 
   useEffect(() => {
     dispatch(listProductCategories())
@@ -82,8 +73,8 @@ function App() {
         <header className="row heading">
           <div className="center header-left">
           <Link className="brand" to="/">
-            <img className="smallLogo" src="img/smallLogo.png" alt="Steel Line"></img>
-            <img className="mainLogo" src="img/mainLogo.png" alt="Steel Line"></img>
+            <img className="smallLogo" src="/img/smallLogo.png" alt="Steel Line"></img>
+            <img className="mainLogo" src="/img/mainLogo.png" alt="Steel Line"></img>
           </Link>
           </div>
           <button
@@ -286,7 +277,7 @@ function App() {
           <Route path="/" component={HomeScreen} exact></Route>
           <Route component={NoMatchPage} />
           </Switch>
-          <img className="bridge" src="../img/bridge.png" alt="bridge design"></img>
+          <img className="bridge" src="/../img/bridge.png" alt="bridge design"></img>
         </main>
         <footer>
           <div className="contact-container">
