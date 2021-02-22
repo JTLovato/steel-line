@@ -31,7 +31,7 @@ body {
 }
 
 .height {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* Layout */
@@ -63,6 +63,10 @@ header {
   justify-content: space-around;
   height: 5rem;
   z-index: 5;
+}
+
+#header-right {
+  display: none;
 }
 
 main {
@@ -286,6 +290,12 @@ a.brand {
 
 .mainLogo {
   width: 100%;
+  display: none;
+}
+
+.smallLogo {
+  height: 100%;
+  display: block;
 }
 
 .badge {
@@ -493,6 +503,7 @@ img.large {
   display: flex;
   flex-wrap: wrap;
   width: 84%;
+  min-height: 35rem;
   margin-left:3rem;
   z-index: 2;
   position:relative;
@@ -952,4 +963,27 @@ img.card-large {
   width: 100%;
   margin: 0;
   padding-top: 0;
+}
+
+
+
+/* Media Queries */
+
+@media (min-width: 769px) {
+  .mainLogo {
+    display: block;
+  }
+  
+  .smallLogo {
+    display: none;
+  }
+
+
+  .open-sidebar {
+    display: none;
+  }
+
+  #header-right {
+    display: flex;
+  }
 }

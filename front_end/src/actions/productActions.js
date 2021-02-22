@@ -21,12 +21,16 @@ import {
   PRODUCT_REVIEW_CREATE_REQUEST,
   PRODUCT_REVIEW_CREATE_SUCCESS,
   PRODUCT_REVIEW_CREATE_FAIL,
+  // PRODUCT_TEAM_LIST_REQUEST,
+  // PRODUCT_TEAM_LIST_SUCCESS,
+  // PRODUCT_TEAM_LIST_FAIL,
 } from '../constants/productConstants';
 
 export const listProducts = ({
   pageNumber = '',
   seller = '',
   name = '',
+  // team = '',
   category = '',
   order = '',
   min = 0,
@@ -38,6 +42,7 @@ export const listProducts = ({
   });
   try {
     const { data } = await Axios.get(
+      // Add in &team=${team} after name when ready for deploy
       `/api/products?pageNumber=${pageNumber}&seller=${seller}&name=${name}&category=${category}&min=${min}&max=${max}&rating=${rating}&order=${order}`
       );
     dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
@@ -57,6 +62,18 @@ export const listProductCategories = () => async (dispatch) => {
     dispatch({ type: PRODUCT_CATEGORY_LIST_FAIL, payload: error.message });
   }
 };
+
+// export const listProductTeams = () => async (dispatch) => {
+//   dispatch({
+//     type: PRODUCT_TEAM_LIST_REQUEST,
+//   });
+//   try {
+//     const { data } = await Axios.get(`/api/products/teams`);
+//     dispatch({ type: PRODUCT_TEAM_LIST_SUCCESS, payload: data });
+//   } catch (error) {
+//     dispatch({ type: PRODUCT_TEAM_LIST_FAIL, payload: error.message });
+//   }
+// };
 
 
 export const detailsProduct = (productId) => async (dispatch) => {

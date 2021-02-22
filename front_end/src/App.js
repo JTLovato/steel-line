@@ -5,6 +5,7 @@ import PrivateRoute from './components/PrivateRoute';
 import { signout } from './actions/userActions';
 import SearchBox from './components/SearchBox'
 import { listProductCategories } from './actions/productActions';
+// Import listProductTeams from '.actions/productActions when ready for deploy
 import LoadingBox from './components/LoadingBox';
 import MessageBox from './components/MessageBox'; 
 import AdminRoute from './components/AdminRoute';
@@ -51,11 +52,22 @@ function App() {
     dispatch(listProductCategories())
   }, [dispatch])
 
+  // const productTeamList = useSelector((state) => state.productTeamList);
+  // const {
+  //   loading: loadingTeams,
+  //   error: errorTeams,
+  //   teams,
+  // } = productTeamList;
+
+  // useEffect(() => {
+  //   dispatch(listProductTeams())
+  // }, [dispatch])
+
   const submitHandler = (e) => {
     e.preventDefault();
-    const newsletter = document.getElementById("newsletter");
+    const newsletterSignup = document.getElementById("newsletter-signup");
     const thanks = document.getElementById("thanks");
-    newsletter.style.display = "none";
+    newsletterSignup.style.display = "none";
     thanks.style.display = "block";
 
   };
@@ -69,9 +81,10 @@ function App() {
     );
   };
   
+  
   return (
     <BrowserRouter>
-      <div className="grid-container">
+      <div className="grid-container" id="top">
       <div className="discounts">
           <p>DEAL ENDS SOON!</p>
           <h1>FREE SHIPPING SITEWIDE ON ORDERS OVER $100!</h1>
@@ -79,53 +92,53 @@ function App() {
           </div>
         <header className="row heading">
           <div className="center header-left">
-            <button
+          <Link className="brand" to="/">
+            <img className="smallLogo" src="img/smallLogo.png" alt="Steel Line"></img>
+            <img className="mainLogo" src="img/mainLogo.png" alt="Steel Line"></img>
+          </Link>
+          </div>
+          <button
               type="button"
               className="open-sidebar"
               onClick={() => setSidebarIsOpen(true)}
             >
               <i className="fa fa-bars"></i>
             </button>
-          <Link className="brand" to="/">
-            <img className="mainLogo" src="img/mainLogo.png" alt="Steel Line"></img>
-          </Link>
-          </div>
-          <div className="header-right row center">
-          <div>
-            <Route 
-              render={({history}) => 
-              <SearchBox 
-                history={history}
-              ></SearchBox>}
-            ></Route>
-          </div>
-
-          <div>
-          <Link to="/cart">
-              Cart
-              {cartItems.length > 0 && (
-                <span className="badge">{cartItems.length}</span>
-              )}
-            </Link>
-            {userInfo ? (
-              <div className="dropdown">
-                <Link to="#">
-                  {userInfo.name} <i className="fa fa-caret-down"></i>{' '}
-                </Link>
-                <ul className="dropdown-content">
-                <li>
-                    <Link to="/profile">User Profile</Link>
-                  </li>
-                <li>
-                    <Link to="/orderhistory">Order History</Link>
-                  </li>
+          <div id="header-right" className="header-right row center ">
+            <div>
+              <Route 
+                render={({history}) => 
+                <SearchBox 
+                  history={history}
+                ></SearchBox>}
+              ></Route>
+            </div>
+            <div>
+              <Link to="/cart">
+                Cart
+                {cartItems.length > 0 && (
+                  <span className="badge">{cartItems.length}</span>
+                )}
+              </Link>
+              {userInfo ? (
+                <div className="dropdown">
+                  <Link to="#">
+                    {userInfo.name} <i className="fa fa-caret-down"></i>{' '}
+                  </Link>
+                  <ul className="dropdown-content">
                   <li>
-                    <Link to="#signout" onClick={signoutHandler}>
-                      Sign Out
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+                      <Link to="/profile">User Profile</Link>
+                    </li>
+                  <li>
+                      <Link to="/orderhistory">Order History</Link>
+                    </li>
+                    <li>
+                      <Link to="#signout" onClick={signoutHandler}>
+                        Sign Out
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
             ) : (
               <Link to="/signin">Sign In</Link>
             )}
@@ -153,7 +166,7 @@ function App() {
               </div>
             )}
           </div>
-          </div>
+        </div>
         </header>
         <aside className={sidebarIsOpen ? 'open': ''}>
                 <ul className="categories">
@@ -173,19 +186,106 @@ function App() {
               categories.map((c) => (
                 <li key={c}>
                   <Link to={`/search/category/${c}`}
-                  onClick={() => setSidebarIsOpen(false)}>
-                    {/* <img src={`../img/headshots/${c}.jpg`}></img> */}
-                    {c}s
-                    
+                  onClick={() => setSidebarIsOpen(false)}> 
+                     {c}s                   
                     </Link>
                 </li>
               ))
           )}
+           {/* {loadingTeams ? (
+            <LoadingBox></LoadingBox>
+          ) : errorTeams ? (
+            <MessageBox variant="danger">{errorTeams}</MessageBox>
+          ) : (
+            teams.map((t) => (
+                <li key={t}>
+                  <Link to={`/search/team/${t}`}
+                  onClick={() => setSidebarIsOpen(false)}> 
+                     {t}
+                    </Link>
+                </li>
+              ))
+          )} */}
                 </ul>
+                
+          <div className=" row center ">
+            <div>
+            
+                    <strong>Categories</strong>
+                    <button onClick={() => setSidebarIsOpen(false)}
+                      className="close-sidebar"
+                      type="button">
+                      <i className="fa fa-close"></i>
+                    </button>
+                  
+              <Route 
+                render={({history}) => 
+                <SearchBox 
+                  history={history}
+                ></SearchBox>}
+              ></Route>
+            </div>
+            <div>
+              <Link to="/cart">
+                Cart
+                {cartItems.length > 0 && (
+                  <span className="badge">{cartItems.length}</span>
+                )}
+              </Link>
+              {userInfo ? (
+                <div className="dropdown">
+                  <Link to="#">
+                    {userInfo.name} <i className="fa fa-caret-down"></i>{' '}
+                  </Link>
+                  <ul className="dropdown-content">
+                  <li>
+                      <Link to="/profile">User Profile</Link>
+                    </li>
+                  <li>
+                      <Link to="/orderhistory">Order History</Link>
+                    </li>
+                    <li>
+                      <Link to="#signout" onClick={signoutHandler}>
+                        Sign Out
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+            ) : (
+              <Link to="/signin">Sign In</Link>
+            )}
+              {userInfo && userInfo.isAdmin && (
+              <div className="dropdown">
+                <Link to="#admin">
+                  Admin <i className="fa fa-caret-down"></i>
+                </Link>
+                <ul className="dropdown-content">
+                  {/* coming soon */}
+                    {/* <li>
+                      <Link to="/dashboard">Dashboard</Link>
+                    </li> */}
+                  {/* coming soon */}
+                  <li>
+                    <Link to="/productlist">Products</Link>
+                  </li>
+                  <li>
+                    <Link to="/orderlist">Orders</Link>
+                  </li>
+                  <li>
+                    <Link to="/userlist">Users</Link>
+                  </li>
+                </ul>
+              </div>
+            )}
+          </div>
+        </div>
+
+
+
         </aside>
 
         <main>
-          <Switch>
+          {/* <Switch> */}
         <Route path="/cart/:id?" component={CartScreen}></Route>
         <Route path="/product/:id" component={ProductScreen} exact></Route>
         <Route
@@ -245,9 +345,9 @@ function App() {
             component={UserEditScreen}
           ></AdminRoute>
           <Route path="/" component={HomeScreen} exact></Route>
-          <Route component={NoMatchPage} />
-          </Switch>
-          <img className="bridge" src="../img/bridge.png"></img>
+          {/* <Route component={NoMatchPage} /> */}
+          {/* </Switch> */}
+          <img className="bridge" src="../img/bridge.png" alt="bridge design"></img>
         </main>
         <footer>
           <div className="contact-container">
@@ -261,14 +361,14 @@ function App() {
                 <div className="contact-container-card">
                   <p>Follow Us</p>
                   <div>
-                    <a href=""><i className="fa fa-2x fa-facebook-f"></i></a>
-                    <a href=""><i className="fa fa-2x  fa-twitter"></i></a>
-                    <a href=""><i className="fa fa-2x  fa-instagram"></i></a>
-                    <a href=""><i className="fa fa-2x  fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/"><i className="fa fa-2x fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/JohnTLovato"><i className="fa fa-2x  fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i className="fa fa-2x  fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/john-lovato-4295b3199/"><i className="fa fa-2x  fa-linkedin"></i></a>
                   </div>
                 </div>
                 <div className="contact-container">
-                  <form id="newsletter" onSubmit={submitHandler}>
+                  <form id="newsletter-signup" onSubmit={submitHandler}>
                     <label htmlFor="newsletter">Stay Connected</label>
                     <label htmlFor="newsletter">Sign up for our email now for great deals</label>
                     <div className="newsletter-submit">
@@ -283,7 +383,7 @@ function App() {
                 </div>
               </div>
           <div className="bottom-footer">
-                <a href="">Privacy Policy</a> <p>////</p> <a href="">Terms Of Use</a> <p>////</p> <a href="#">&copy; {year} Steel | Line</a>
+                <a href="https://www.privacypolicygenerator.info/">Privacy Policy</a> <p>&#47;&#47;&#47;&#47;</p> <a href="https://www.termsofusegenerator.net/">Terms Of Use</a> <p>&#47;&#47;&#47;&#47;</p> <a href="#top">&copy; {year} Steel | Line</a>
           </div>
           </footer>
       </div>

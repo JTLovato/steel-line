@@ -22,17 +22,6 @@ export default function ProductScreen(props) {
               <ul>
                 <li>
                     <div className="player-details player-top-left">{product.playerNum}</div>
-                    {/* <div className="player-details player-top-right">
-                {product.team == "Pittsburgh Penguins" &&
-                  <img src="../img/icons/penguinslogo.png"></img>
-                }
-                    {product.team == "Pittsburgh Steelers" && 
-                    <img src="../img/icons/steelerslogo.png"></img>
-                }
-                {product.team == "Pittsburgh Pirates" && 
-                    <img src="../img/icons/pirateslogo.png"></img>
-                }
-                </div> */}
                 </li>
 
                 <div className="col-2">

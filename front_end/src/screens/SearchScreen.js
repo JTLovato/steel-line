@@ -20,6 +20,7 @@ export default function SearchScreen(props) {
         pageNumber = 1,
       } = useParams();
   const dispatch = useDispatch();
+
   const productList = useSelector((state) => state.productList);
   const { loading, error, products, page, pages } = productList;
 
@@ -29,13 +30,21 @@ export default function SearchScreen(props) {
     error: errorCategories,
     categories,
   } = productCategoryList;
+
+  // const productTeamList = useSelector((state) => state.productTeamList);
+  // const {
+  //   loading: loadingTeams,
+  //   error: errorTeams,
+  //   teams,
+  // } = productTeamList;
+
   useEffect(() => {
     dispatch(
       listProducts({
         pageNumber,
         name: name !== 'all' ? name : '',
         category: category !== 'all' ? category : '',
-        team: team !== 'all' ? team : '',
+        // team: team !== 'all' ? team : '',
         min,
         max,
         rating,
@@ -50,9 +59,10 @@ export default function SearchScreen(props) {
     const filterPage = filter.page || pageNumber;
     const filterCategory = filter.category || category;
     const filterName = filter.name || name;
+    const filterTeam = filter.team || team;
     const filterRating = filter.rating || rating;
     const sortOrder = filter.order || order;
-    return `/search/category/${filterCategory}/name/${filterName}/max/${filterMax}/min/${filterMin}/rating/${filterRating}/order/${sortOrder}/pageNumber/${filterPage}`;
+    return `/search/category/${filterCategory}/name/${filterName}/team/${filterTeam}/max/${filterMax}/min/${filterMin}/rating/${filterRating}/order/${sortOrder}/pageNumber/${filterPage}`;
   };
 
   return (
@@ -82,7 +92,7 @@ export default function SearchScreen(props) {
       </div>
       <div className="row top">
         <div className="col-1 margin-sides">
-          <h3>Department</h3>
+        <h3>Categories</h3>
           <div>
             {loadingCategories ? (
               <LoadingBox></LoadingBox>
@@ -90,27 +100,40 @@ export default function SearchScreen(props) {
               <MessageBox variant="danger">{errorCategories}</MessageBox>
             ) : (
               <ul>
-                <li>
-                  <Link
-                    className={'all' === category ? 'active' : ''}
-                    to={getFilterUrl({ category: 'all' })}
-                  >
-                    Any
-                  </Link>
-                </li>
                 {categories.map((c) => (
                   <li key={c}>
                     <Link
                       className={c === category ? 'active' : ''}
                       to={getFilterUrl({ category: c })}
                     >
-                      {c}
+                      {c}s
                     </Link>
                   </li>
                 ))}
               </ul>
             )}
           </div>
+        {/* <h3>Teams</h3>
+          <div>
+            {loadingTeams ? (
+              <LoadingBox></LoadingBox>
+            ) : errorTeams ? (
+              <MessageBox variant="danger">{errorTeams}</MessageBox>
+            ) : (
+              <ul>
+                {teams.map((t) => (
+                  <li key={t}>
+                    <Link
+                      className={t === team ? 'active' : ''}
+                      to={getFilterUrl({ team: t })}
+                    >
+                      {t}s
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div> */}
           <div>
             <h3>Price</h3>
             <ul>

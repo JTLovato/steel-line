@@ -6,12 +6,15 @@ import { isAdmin, isAuth, isSellerOrAdmin } from '../utils.js';
 
 const productRouter = express.Router();
 
+
+
 productRouter.get(
   '/',
   expressAsyncHandler(async (req, res) => {
     const pageSize = 12;
     const page = Number(req.query.pageNumber) || 1;
     const name = req.query.name || '';
+    // const team = req.query.team || '';
     const category = req.query.category || '';
     const seller = req.query.seller || '';
     const order = req.query.order || '';
@@ -26,6 +29,7 @@ productRouter.get(
     const sellerFilter = seller ? { seller } : {};
     const categoryFilter = category ? { category } : {};
     const nameFilter = name ? { name: {$regex: name, $options: 'i'} } : {};
+    // const teamFilter = team ? { team: {$regex: team, $options: 'i'} } : {};
     const priceFilter = min && max ? { price: { $gte: min, $lte: max } } : {};
     const ratingFilter = rating ? { rating: { $gte: rating } } : {};
     const sortOrder =
@@ -40,6 +44,7 @@ productRouter.get(
         const count = await Product.count({
           ...sellerFilter,
           ...nameFilter,
+          // ...teamFilter,
           ...categoryFilter,
           ...priceFilter,
           ...ratingFilter,
@@ -48,6 +53,7 @@ productRouter.get(
     const products = await Product.find({
         ...sellerFilter, 
         ...nameFilter, 
+        // ...teamFilter,
         ...categoryFilter,
         ...priceFilter,
         ...ratingFilter,
@@ -64,6 +70,11 @@ productRouter.get('/categories', expressAsyncHandler( async (req, res) => {
   const categories = await Product.find().distinct('category');
   res.send(categories);
 }))
+
+// productRouter.get('/teams', expressAsyncHandler( async (req, res) => {
+//   const teams = await Product.find().distinct('team');
+//   res.send(teams);
+// }))
 
 productRouter.get(
   '/seed',
@@ -95,16 +106,17 @@ productRouter.post(
   isSellerOrAdmin,
   expressAsyncHandler(async (req, res) => {
     const product = new Product({
-      name: 'sample name ' + Date.now(),
+      name: 'Sample Name ' + Date.now(),
       seller: req.user._id,
       image: '/images/p1.jpg',
+      // team: 'Sample Team',
       price: 0,
-      category: 'sample category',
-      brand: 'sample brand',
+      category: 'Sample Category',
+      brand: 'Sample Brand',
       countInStock: 0,
       rating: 0,
       numReviews: 0,
-      description: 'sample description',
+      description: 'Sample Description',
     });
     const createdProduct = await product.save();
     res.send({ message: 'Product Created', product: createdProduct });
@@ -122,6 +134,7 @@ productRouter.post(
         product.name = req.body.name;
         product.price = req.body.price;
         product.image = req.body.image;
+        // product.team = req.body.team;
         product.category = req.body.category;
         product.brand = req.body.brand;
         product.countInStock = req.body.countInStock;

@@ -24,6 +24,9 @@ const {
     PRODUCT_REVIEW_CREATE_SUCCESS,
     PRODUCT_REVIEW_CREATE_FAIL,
     PRODUCT_REVIEW_CREATE_RESET,
+    PRODUCT_TEAM_LIST_REQUEST,
+    PRODUCT_TEAM_LIST_SUCCESS,
+    PRODUCT_TEAM_LIST_FAIL,
   } = require('../constants/productConstants');
   
   export const productListReducer = (
@@ -119,6 +122,22 @@ export const productDetailsReducer = (state = { loading: true }, action) => {
       default:
         return state;
     }
+};
+
+export const productTeamListReducer = (
+  state = { loading: true, products: [] },
+  action
+) => {
+  switch (action.type) {
+    case PRODUCT_TEAM_LIST_REQUEST:
+      return { loading: true };
+    case PRODUCT_TEAM_LIST_SUCCESS:
+      return { loading: false, categories: action.payload };
+    case PRODUCT_TEAM_LIST_FAIL:
+      return { loading: false, error: action.payload };
+    default:
+      return state;
+  }
 };
 
 export const productReviewCreateReducer = (state = {}, action) => {

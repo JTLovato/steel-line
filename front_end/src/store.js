@@ -18,6 +18,7 @@ import {
   productListReducer,
   productReviewCreateReducer,
   productUpdateReducer,
+  productTeamListReducer,
 } from './reducers/productReducers';
 import {
   userRegisterReducer,
@@ -72,6 +73,7 @@ const initialState = {
     userTopSellersList: userTopSellerReducer,
     productCategoryList: productCategoryListReducer,
     productReviewCreate: productReviewCreateReducer,
+    productTeamList: productTeamListReducer,
   });
   const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
   const store = createStore(

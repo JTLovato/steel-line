@@ -26,17 +26,17 @@ export default function HomeScreen() {
         <>
           <div className="row center">
             <div className="landingpage-row">
-              <Link to={`/search/name/penguins`} className="image-link"><img src="../img/shoppenguins.png"></img></Link>
-              <Link to={`/search/name/steelers`} className="image-link"><img src="../img/shopsteelers.png"></img></Link>
-              <Link to={`/search/name/pirates`} className="image-link"><img src="../img/shoppirates.png"></img></Link>
+              <Link to={`/search/name/penguins`} className="image-link"><img src="../img/shoppenguins.png" alt="Shop Penguins"></img></Link>
+              <Link to={`/search/name/steelers`} className="image-link"><img src="../img/shopsteelers.png" alt="Shot Steelers"></img></Link>
+              <Link to={`/search/name/pirates`} className="image-link"><img src="../img/shoppirates.png" alt="Shop Pirates"></img></Link>
             </div>
 
             <div className="shop-specifics">
 
             <div className="secondary-row">
-            <Link to={`/search/category/jersey`} className=""><img src="../img/shopjerseys.png"></img></Link>
-            <Link to={`/search/category/hat`} className=""><img src="../img/shophats.png"></img></Link>
-            <Link to={`/search/category/shirt`} className=""><img src="../img/shopshirts.png"></img></Link>
+            <Link to={`/search/category/jersey`} className=""><img src="../img/shopjerseys.png" alt="Shop Jerseys"></img></Link>
+            <Link to={`/search/category/hat`} className=""><img src="../img/shophats.png" alt="Shop hats"></img></Link>
+            <Link to={`/search/category/shirt`} className=""><img src="../img/shopshirts.png" alt="Shop Shirts"></img></Link>
         </div>
             </div>
 
@@ -44,7 +44,7 @@ export default function HomeScreen() {
               <h1>LOCATIONS</h1>
               <div className="info-card-holder">
                 <div className="info-holder">
-                  <img src="../img/storeshot.jpg" alt=""></img>
+                  <img src="../img/storeshot.jpg" alt="Steel Line's First Store"></img>
                   <p>The OG, the one that started it all. Visit us at our first ever store, at</p>
                   <address>
                     The Strip District<br />
@@ -54,7 +54,7 @@ export default function HomeScreen() {
                   </address>
                 </div>
                 <div className="info-holder">
-                  <img src="../img/storeshot2.jpg" alt=""></img>
+                  <img src="../img/storeshot2.jpg" alt="Steel Line's Second Store"></img>
                   <p>Our newest store, because we knew you wanted more. Found at</p>
                   <address>
                     Southside<br />
