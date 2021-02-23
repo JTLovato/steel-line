@@ -6,6 +6,7 @@ import CheckoutSteps from '../components/CheckoutSteps';
 import { ORDER_CREATE_RESET } from '../constants/orderConstants';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
+import AlmostFree from '../components/AlmostFree';
 
 export default function PlaceOrderScreen(props) {
   const cart = useSelector((state) => state.cart);
@@ -27,6 +28,7 @@ export default function PlaceOrderScreen(props) {
   const placeOrderHandler = () => {
     dispatch(createOrder({ ...cart, orderItems: cart.cartItems }));
 };
+
 useEffect(() => {
   if (success) {
     props.history.push(`/order/${order._id}`);
@@ -114,6 +116,7 @@ useEffect(() => {
                   <div>${cart.taxPrice.toFixed(2)}</div>
                 </div>
               </li>
+              <AlmostFree />
               <li>
                 <div className="row">
                   <div>

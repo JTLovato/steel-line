@@ -102,7 +102,7 @@ productRouter.post(
       name: 'Sample Name ' + Date.now(),
       seller: req.user._id,
       image: '/images/p1.jpg',
-      // team: 'Sample Team',
+      style: 'Home',
       price: 0,
       category: 'Sample Category',
       brand: 'Sample Brand',
@@ -129,6 +129,7 @@ productRouter.post(
         product.image = req.body.image;
         product.category = req.body.category;
         product.brand = req.body.brand;
+        product.brand = req.body.style;
         product.countInStock = req.body.countInStock;
         product.description = req.body.description;
         const updatedProduct = await product.save();

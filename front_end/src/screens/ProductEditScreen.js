@@ -157,7 +157,7 @@ export default function ProductEditScreen(props) {
               <select 
                 id="team" 
                 name="team" 
-                placeHolder="Select Team" 
+                placeholder="Select Team" 
                 onChange={(e) => setTeam(e.target.value)}
                 >
                 <option value="penguins">Penguins</option>
@@ -207,7 +207,7 @@ export default function ProductEditScreen(props) {
               <select 
                 id="category" 
                 name="category" 
-                placeHolder="Select Category" 
+                placeholder="Select Category" 
                 onChange={(e) => setCategory(e.target.value)}
               >
                 <option value="jersey">Jersey</option>
@@ -241,7 +241,7 @@ export default function ProductEditScreen(props) {
               <select 
                 id="style" 
                 name="style" 
-                placeHolder="Select Style" 
+                placeholder="Select Style" 
                 onChange={(e) => setStyle(e.target.value)}
               >
                 <option value="home">Home</option>

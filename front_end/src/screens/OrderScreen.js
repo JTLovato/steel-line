@@ -10,6 +10,7 @@ import {
     ORDER_DELIVER_RESET,
     ORDER_PAY_RESET,
   } from '../constants/orderConstants';
+import AlmostFree from '../components/AlmostFree';
 
 export default function OrderScreen(props) {
   const orderId = props.match.params.id;
@@ -174,6 +175,7 @@ export default function OrderScreen(props) {
                   <div>${order.taxPrice.toFixed(2)}</div>
                 </div>
               </li>
+              <AlmostFree />
               <li>
                 <div className="row">
                   <div>

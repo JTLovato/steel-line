@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import PrivateRoute from './components/PrivateRoute';
 import { signout } from './actions/userActions';
 import SearchBox from './components/SearchBox'
@@ -63,7 +63,7 @@ function App() {
   
   
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="grid-container" id="top">
         <div className="discounts">
           <p>DEAL ENDS SOON!</p>
@@ -317,7 +317,7 @@ function App() {
           </div>
           </footer>
       </div>
-    </BrowserRouter>
+    </HashRouter>
 );
 }
 
