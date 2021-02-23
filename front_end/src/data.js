@@ -547,7 +547,7 @@ const data = {
     {
 
         name: 'Colin Moran Pittsburgh Pirates Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: '1st Base',	
         player: 'Moran, Colin',
@@ -565,7 +565,7 @@ const data = {
     },
 {
         name: 'Colin Moran Pittsburgh Pirates Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: '1st Base',	
         player: 'Moran, Colin',
@@ -583,7 +583,7 @@ const data = {
     },
 {
         name: 'Colin Moran Pittsburgh Pirates Nike Alternate Jersey ',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: '1st Base',	
         player: 'Moran, Colin',
@@ -601,7 +601,7 @@ const data = {
     },
     {
         name: 'Adam Frazier Pittsburgh Pirates Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: '2nd Base',	
         player: 'Frazier, Adam',
@@ -619,7 +619,7 @@ const data = {
     },
 {
         name: 'Adam Frazier Pittsburgh Pirates Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: '2nd Base',	
         player: 'Frazier, Adam',
@@ -637,7 +637,7 @@ const data = {
     },
 {
         name: 'Adam Frazier Pittsburgh Pirates Nike Alternate Jersey ',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: '2nd Base',	
         player: 'Frazier, Adam',
@@ -655,7 +655,7 @@ const data = {
     },
     {
         name: 'Ke\'Bryan Hayes Pittsburgh Pirates Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: '3rd Base',	
         player: 'Hayes, Ke\'Bryan',
@@ -673,7 +673,7 @@ const data = {
     },
 {
         name: 'Ke\'Bryan Hayes Pittsburgh Pirates Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: '3rd Base',	
         player: 'Hayes, Ke\'Bryan',
@@ -691,7 +691,7 @@ const data = {
     },
 {
         name: 'Ke\'Bryan Hayes Pittsburgh Pirates Nike Alternate Jersey ',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: '3rd Base',	
         player: 'Hayes, Ke\'Bryan',
@@ -709,7 +709,7 @@ const data = {
     },
 {
         name: 'Bryan Reynolds Pittsburgh Pirates Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Left Field',	
         player: 'Reynolds, Bryan',
@@ -727,7 +727,7 @@ const data = {
     },
 {
         name: 'Bryan Reynolds Pittsburgh Pirates Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Left Field',	
         player: 'Reynolds, Bryan',
@@ -745,7 +745,7 @@ const data = {
     },
 {
         name: 'Bryan Reynolds Pittsburgh Pirates Nike Alternate Jersey ',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Left Field',	
         player: 'Reynolds, Bryan',
@@ -763,7 +763,7 @@ const data = {
     },
 {
         name: 'Gregory Polanco Pittsburgh Pirates Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Right Field',	
         player: 'Polanco, Gregory',
@@ -781,7 +781,7 @@ const data = {
     },
 {
         name: 'Gregory Polanco Pittsburgh Pirates Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Right Field',	
         player: 'Polanco, Gregory',
@@ -799,7 +799,7 @@ const data = {
     },
 {
         name: 'Gregory Polanco Pittsburgh Pirates Nike Alternate Jersey ',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Right Field',	
         player: 'Polanco, Gregory',
@@ -817,7 +817,7 @@ const data = {
     },
 {
         name: 'Anthony Alford Pittsburgh Pirates Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Center Field',	
         player: 'Alford, Anthony',
@@ -836,7 +836,7 @@ const data = {
 //Alfords jerseys only in white
 {
         name: 'Anthony Alford Pittsburgh Pirates Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Center Field',	
         player: 'Alford, Anthony',
@@ -854,7 +854,7 @@ const data = {
     },
 {
         name: 'Anthony Alford Pittsburgh Pirates Nike Alternate Jersey ',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Center Field',	
         player: 'Alford, Anthony',
@@ -872,7 +872,7 @@ const data = {
     },
 {
         name: 'Jacob Stallings Pittsburgh Pirates Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Catcher',	
         player: 'Stallings, Jacob',
@@ -890,7 +890,7 @@ const data = {
     },
 {
         name: 'Jacob Stallings Pittsburgh Pirates Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Catcher',	
         player: 'Stallings, Jacob',
@@ -908,7 +908,7 @@ const data = {
     },
 {
         name: 'Jacob Stallings Pittsburgh Pirates Nike Alternate Jersey ',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Catcher',	
         player: 'Stallings, Jacob',
@@ -926,7 +926,7 @@ const data = {
     },
 {
         name: 'Erik Gonzalez Pittsburgh Pirates Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Short Stop',	
         player: 'Gonzalez, Erik',
@@ -944,7 +944,7 @@ const data = {
     },
 {
         name: 'Erik Gonzalez Pittsburgh Pirates Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Short Stop',	
         player: 'Gonzalez, Erik',
@@ -962,7 +962,7 @@ const data = {
     },
 {
         name: 'Erik Gonzalez Pittsburgh Pirates Nike Alternate Jersey ',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Short Stop',	
         player: 'Gonzalez, Erik',
@@ -980,7 +980,7 @@ const data = {
     },
 {
         name: 'Jameson Taillon Pittsburgh Pirates Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Pitcher',	
         player: 'Taillon, Jameson',
@@ -998,7 +998,7 @@ const data = {
     },
 {
         name: 'Jameson Taillon Pittsburgh Pirates Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Pitcher',	
         player: 'Taillon, Jameson',
@@ -1016,7 +1016,7 @@ const data = {
     },
 {
         name: 'Jameson Taillon Pittsburgh Pirates Nike Alternate Jersey ',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Pirates',
         position: 'Pitcher',	
         player: 'Taillon, Jameson',
@@ -1035,7 +1035,7 @@ const data = {
 //Steelers 
 {
         name: 'JuJu Smith-Schuster Pittsburgh Steelers Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Wide Receiver',	
         player: 'Smith-Schuster, Juju',
@@ -1053,7 +1053,7 @@ const data = {
     },
 {
         name: 'JuJu Smith-Schuster Pittsburgh Steelers Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Wise Receiver',	
         player: 'Smith-Schuster, JuJu',
@@ -1071,7 +1071,7 @@ const data = {
     },
 {
         name: 'TJ Watt Home Pittsburgh Steelers Nike Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Linebacker',	
         player: 'Watt, TJ',
@@ -1089,7 +1089,7 @@ const data = {
     },
 {
         name: 'TJ Watt Away Pittsburgh Steelers Nike Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Linebacker',	
         player: 'Watt, TJ',
@@ -1107,7 +1107,7 @@ const data = {
     },
 {
         name: 'Minkah Fitzpatrick Pittsburgh Steelers Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Safety',	
         player: 'Fitzpatrick, Minkah',
@@ -1125,7 +1125,7 @@ const data = {
     },
 {
         name: 'Minkah Fitzpatrick Pittsburgh Steelers Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Safety',
         player: 'Fitzpatrick, Minkah',
@@ -1143,7 +1143,7 @@ const data = {
     },
 {
         name: 'James Conner Pittsburgh Steelers Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Running Back',	
         player: 'Conner, James',
@@ -1161,7 +1161,7 @@ const data = {
     },
 {
         name: 'James Conner Pittsburgh Steelers Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Running Back',	
         player: 'Conner, James',
@@ -1179,7 +1179,7 @@ const data = {
     },
 {
         name: 'Ben Roethlisberger Pittsburgh Steelers Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Quarterback',	
         player: 'Roethlisberger, Ben',
@@ -1197,7 +1197,7 @@ const data = {
     },
 {
         name: 'Ben Roethlisberger Pittsburgh Steelers Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Quarterback',	
         player: 'Roethlisberger, Ben',
@@ -1215,7 +1215,7 @@ const data = {
     },
 {
         name: 'Mason Rudolph Pittsburgh Steelers Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Quarterback',	
         player: 'Rudolph, Mason',
@@ -1233,7 +1233,7 @@ const data = {
     },
 {
         name: 'Mason Rudolph Pittsburgh Steelers Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Quarterback',	
         player: 'Rudolph, Mason',
@@ -1251,7 +1251,7 @@ const data = {
     },
 {
         name: 'Alejandro Villanueva Pittsburgh Steelers Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Tackle',	
         player: 'Villanueva, Alejandro',
@@ -1269,7 +1269,7 @@ const data = {
     },
 {
         name: 'Alejandro Villanueva Pittsburgh Steelers Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Tackle',	
         player: 'Villanueva, Alejandro',
@@ -1287,7 +1287,7 @@ const data = {
     },
 {
         name: 'Markus Wheaton Pittsburgh Steelers Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Wide Receiver',	
         player: 'Wheaton, Markus',
@@ -1305,7 +1305,7 @@ const data = {
     },
 {
         name: 'Markus Wheaton Pittsburgh Steelers Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Wide Receiver',	
         player: 'Wheaton, Markus',
@@ -1323,7 +1323,7 @@ const data = {
     },
 {
         name: 'Devin Bush Pittsburgh Steelers Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Linebacker',	
         player: 'Bush, Devin',
@@ -1341,7 +1341,7 @@ const data = {
     },
 {
         name: 'Devin Bush Pittsburgh Steelers Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Linebacker',	
         player: 'Bush, Devin',
@@ -1359,7 +1359,7 @@ const data = {
     },
 {
         name: 'Joe Haden Pittsburgh Steelers Nike Home Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Cornerback',	
         player: 'Haden, Joe',
@@ -1377,7 +1377,7 @@ const data = {
     },
 {
         name: 'Joe Haden Pittsburgh Steelers Nike Away Jersey',
-        catagory: 'Jersey',
+        category: 'Jersey',
         team: 'Pittsburgh Steelers',
         position: 'Cornerback',	
         player: 'Haden, Joe',
@@ -1399,7 +1399,7 @@ const data = {
 
 {
         name: 'Pittsburgh Penguins \'47 Dark Haze Solo Flex Hat',
-        catagory: 'Hat',
+        category: 'Hat',
         team: 'Pittsburgh Penguins',
         position: '',	
         player: '',
@@ -1417,7 +1417,7 @@ const data = {
     },
         {
         name: 'Pittsburgh Penguins Fanatics Team Pride Cuffed Knit Hat',
-        catagory: 'Hat',
+        category: 'Hat',
         team: 'Pittsburgh Penguins',
         position: '',	
         player: '',
@@ -1435,7 +1435,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Penguins Fanatics NHL Draft Pro Hat',
-        catagory: 'Hat',
+        category: 'Hat',
         team: 'Pittsburgh Penguins',
         position: '',	
         player: '',
@@ -1453,7 +1453,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Penguins Fanatics Details Flex Hat',
-        catagory: 'Hat',
+        category: 'Hat',
         team: 'Pittsburgh Penguins',
         position: '',	
         player: '',
@@ -1471,7 +1471,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Steelers New Era NFL Sideline Hat',
-        catagory: 'Hat',
+        category: 'Hat',
         team: 'Pittsburgh Steelers',
         position: '',	
         player: '',
@@ -1489,7 +1489,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Steelers New Era Rally Cry Flex Hat',
-        catagory: 'Hat',
+        category: 'Hat',
         team: 'Pittsburgh Steelers',
         position: '',	
         player: '',
@@ -1507,7 +1507,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Steelers New Era AFC North Division Champions Hat',
-        catagory: 'Hat',
+        category: 'Hat',
         team: 'Pittsburgh Steelers',
         position: '',	
         player: '',
@@ -1525,7 +1525,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Steelers 47 Oil Cloth Clean Up Hat',
-        catagory: 'Hat',
+        category: 'Hat',
         team: 'Pittsburgh Steelers',
         position: '',	
         player: '',
@@ -1543,7 +1543,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Steelers New Era Griswold Hat',
-        catagory: 'Hat',
+        category: 'Hat',
         team: 'Pittsburgh Steelers',
         position: '',	
         player: '',
@@ -1561,7 +1561,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Pirates New Era On Field Hat',
-        catagory: 'Hat',
+        category: 'Hat',
         team: 'Pittsburgh Pirates',
         position: '',	
         player: '',
@@ -1579,7 +1579,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Pirates New Era Low Profile Hat',
-        catagory: 'Hat',
+        category: 'Hat',
         team: 'Pittsburgh Pirates',
         position: '',	
         player: '',
@@ -1597,7 +1597,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Pirates New Era Core Classic Hat',
-        catagory: 'Hat',
+        category: 'Hat',
         team: 'Pittsburgh Pirates',
         position: '',	
         player: '',
@@ -1615,7 +1615,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Pirates New Era Black On Black Hat',
-        catagory: 'Hat',
+        category: 'Hat',
         team: 'Pittsburgh Pirates',
         position: '',	
         player: '',
@@ -1633,7 +1633,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Pirates New Era Vert Hat',
-        catagory: 'Hat',
+        category: 'Hat',
         team: 'Pittsburgh Pirates',
         position: '',	
         player: '',
@@ -1654,7 +1654,7 @@ const data = {
 
 {
         name: 'Pittsburgh Pirates Nike Team Logo Legend shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Pirates',
         position: '',	
         player: '',
@@ -1672,7 +1672,7 @@ const data = {
     },
 {
         name: 'Bryan Reynolds Pittsburgh Pirates Majestic shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Pirates',
         position: 'Center Field',	
         player: 'Reynolds, Bryan',
@@ -1690,7 +1690,7 @@ const data = {
     },
 {
         name: 'Roberto Clemente Pittsburgh Pirates Cooperstown shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Pirates',
         position: 'Right Field',	
         player: 'Clemente, Roberto',
@@ -1708,7 +1708,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Pirates Wordmark Panel shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Pirates',
         position: '',	
         player: '',
@@ -1726,7 +1726,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Pirates Under Armour Dual Logo shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Pirates',
         position: '',	
         player: '',
@@ -1744,7 +1744,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Pirates Fanatics Steel City shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Pirates',
         position: '',	
         player: '',
@@ -1762,7 +1762,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Penguins Fanatics Secondary Logo shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Penguins',
         position: '',	
         player: '',
@@ -1780,7 +1780,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Penguins Fanatics Victory Arch shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Penguins',
         position: '',	
         player: '',
@@ -1798,7 +1798,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Penguins Fanatics Primary Logo shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Penguins',
         position: '',	
         player: '',
@@ -1816,7 +1816,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Penguins Fanatics Women\'s Icon Lace shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Penguins',
         position: '',	
         player: '',
@@ -1834,7 +1834,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Penguins Fanatics Icon Slapshot shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Penguins',
         position: '',	
         player: '',
@@ -1852,7 +1852,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Penguins Fanatics Smoked shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Penguins',
         position: '',	
         player: '',
@@ -1870,7 +1870,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Steelers Nike Fan Gear shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Steelers',
         position: '',	
         player: '',
@@ -1888,7 +1888,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Steelers Fanatics Women\'s Steel Curtain shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Steelers',
         position: '',	
         player: '',
@@ -1906,7 +1906,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Steelers AFC North Divison Champions shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Steelers',
         position: '',	
         player: '',
@@ -1924,7 +1924,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Steelers Nike Performance shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Steelers',
         position: '',	
         player: '',
@@ -1942,7 +1942,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Steelers Nike Primary Logo shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Steelers',
         position: '',	
         player: '',
@@ -1960,7 +1960,7 @@ const data = {
     },
 {
         name: 'Pittsburgh Steelers Fanatics Want It More shirt',
-        catagory: 'Shirt',
+        category: 'Shirt',
         team: 'Pittsburgh Steelers',
         position: '',	
         player: '',
