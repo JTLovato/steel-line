@@ -1,5 +1,5 @@
 {
-  "name": "steel-line-frontend",
+  "name": "steel-line-front_end",
   "proxy": "http://127.0.0.1:5000",
   "version": "0.1.0",
   "private": true,
