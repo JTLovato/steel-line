@@ -14,7 +14,6 @@ productRouter.get(
     const pageSize = 12;
     const page = Number(req.query.pageNumber) || 1;
     const name = req.query.name || '';
-    // const team = req.query.team || '';
     const category = req.query.category || '';
     const seller = req.query.seller || '';
     const order = req.query.order || '';

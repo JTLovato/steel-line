@@ -567,27 +567,6 @@ const data = {
             description: 'You\'re the ultimate Pittsburgh Penguins fan, and nothing is better than watching Casey DeSmith in action. Whether you\'re behind the glass or the TV screen, this Casey DeSmith Authentic Player Jersey from adidas is the perfect way to express your fandom. It features the authentic Pittsburgh Penguins crest on the front and Casey DeSmith\'s name and number on the back, along with PlayDry and X-trafil fabric technologies that maximize comfort and durability, respectively.',
         },
         {
-            name: 'Sidney Crosby Pittsburgh  Penguins Adidas Home Jersey ',
-            category: 'Jersey',
-            team: 'Pittsburgh Penguins',
-            position: 'center',
-            player: 'Crosby, Sidney',
-            playerNum: 87,
-            style: 'Home',
-            size: 's',
-            year: 2021,
-            image: '../img/penguins/jscrosby87ho2021.jpg',
-            price: 169.99,
-            countInStock: 100,
-            brand: 'Adidas',
-            rating: '4.8',
-            numReviews: 102,
-            description: 'You\'re the ultimate Pittsburgh Penguins fan, and nothing is better than watching Sidney Crosby in action. Whether you\'re behind the glass or the TV screen, this Sidney Crosby Authentic Player Jersey from adidas is the perfect way to express your fandom. It features the authentic Pittsburgh Penguins crest on the front and Sidney Crosby\'s name and number on the back, along with PlayDry and X-trafil fabric technologies that maximize comfort and durability, respectively.',
-        },
-
-
-        {
-            _id: 'jsmoran19ho2021',
             name: 'Colin Moran Pittsburgh Pirates Nike Home Jersey',
             category: 'Jersey',
             team: 'Pittsburgh Pirates',
@@ -606,7 +585,6 @@ const data = {
             description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Colin Moran Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
         },
     {
-            _id: 'jsmoran19aw2021',
             name: 'Colin Moran Pittsburgh Pirates Nike Away Jersey',
             category: 'Jersey',
             team: 'Pittsburgh Pirates',
@@ -625,7 +603,6 @@ const data = {
             description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Colin Moran Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
         },
     {
-            _id: 'jsmoran19alt2021',
             name: 'Colin Moran Pittsburgh Pirates Nike Alternate Jersey ',
             category: 'Jersey',
             team: 'Pittsburgh Pirates',
@@ -644,7 +621,6 @@ const data = {
             description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Colin Moran Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
         },
         {
-            _id: 'jsfrazier26ho2021',
             name: 'Adam Frazier Pittsburgh Pirates Nike Home Jersey',
             category: 'Jersey',
             team: 'Pittsburgh Pirates',
@@ -663,7 +639,6 @@ const data = {
             description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Adam Frazier Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
         },
     {
-            _id: 'jsfrazier26aw2021',
             name: 'Adam Frazier Pittsburgh Pirates Nike Away Jersey',
             category: 'Jersey',
             team: 'Pittsburgh Pirates',
@@ -682,7 +657,6 @@ const data = {
             description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Adam Frazier Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
         },
     {
-            _id: 'jsfrazier26alt2021',
             name: 'Adam Frazier Pittsburgh Pirates Nike Alternate Jersey ',
             category: 'Jersey',
             team: 'Pittsburgh Pirates',
@@ -701,7 +675,6 @@ const data = {
             description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Adam Frazier Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
         },
         {
-            _id: 'jshayes13ho2021',
             name: 'Ke\'Bryan Hayes Pittsburgh Pirates Nike Home Jersey',
             category: 'Jersey',
             team: 'Pittsburgh Pirates',
@@ -720,7 +693,6 @@ const data = {
             description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Ke\'Bryan Hayes Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
         },
     {
-            _id: 'jshayes13aw2021',
             name: 'Ke\'Bryan Hayes Pittsburgh Pirates Nike Away Jersey',
             category: 'Jersey',
             team: 'Pittsburgh Pirates',
@@ -739,7 +711,6 @@ const data = {
             description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Ke\'Bryan Hayes Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
         },
     {
-            _id: 'jshayes13alt2021',
             name: 'Ke\'Bryan Hayes Pittsburgh Pirates Nike Alternate Jersey ',
             category: 'Jersey',
             team: 'Pittsburgh Pirates',
@@ -758,7 +729,6 @@ const data = {
             description: 'You\re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Ke\'Bryan Hayes Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
         },
     {
-            _id: 'jsreynolds10ho2021',
             name: 'Bryan Reynolds Pittsburgh Pirates Nike Home Jersey',
             category: 'Jersey',
             team: 'Pittsburgh Pirates',
@@ -777,7 +747,6 @@ const data = {
             description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Bryan Reynolds Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
         },
     {
-            _id: 'jsreynolds10aw2021',
             name: 'Bryan Reynolds Pittsburgh Pirates Nike Away Jersey',
             category: 'Jersey',
             team: 'Pittsburgh Pirates',
@@ -796,7 +765,6 @@ const data = {
             description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Bryan Reynolds Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
         },
     {
-            _id: 'jsreynolds10alt2021',
             name: 'Bryan Reynolds Pittsburgh Pirates Nike Alternate Jersey ',
             category: 'Jersey',
             team: 'Pittsburgh Pirates',
@@ -815,7 +783,6 @@ const data = {
             description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Bryan Reynolds Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
         },
     {
-            _id: 'jspolanco25ho2021',
             name: 'Gregory Polanco Pittsburgh Pirates Nike Home Jersey',
             category: 'Jersey',
             team: 'Pittsburgh Pirates',
@@ -834,7 +801,6 @@ const data = {
             description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Gregory Polanco Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
         },
     {
-            _id: 'jspolanco25aw2021',
             name: 'Gregory Polanco Pittsburgh Pirates Nike Away Jersey',
             category: 'Jersey',
             team: 'Pittsburgh Pirates',
@@ -853,7 +819,6 @@ const data = {
             description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Gregory Polanco Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
         },
     {
-            _id: 'jspolanco25alt2021',
             name: 'Gregory Polanco Pittsburgh Pirates Nike Alternate Jersey ',
             category: 'Jersey',
             team: 'Pittsburgh Pirates',
@@ -872,7 +837,6 @@ const data = {
             description: 'You\'re the type of Pittsburgh Pirates fan who counts down the minutes until the first pitch. When your squad finally hits the field, show your support all game long with this Gregory Polanco Replica Player jersey from Nike. Its classic full-button design features crisp player and Pittsburgh Pirates applique graphics, leaving no doubt you\'ll be along for the ride for every game and beyond this season.',
         },
     {
-            _id: 'jsalford6ho2021',
             name: 'Anthony Alford Pittsburgh Pirates Nike Home Jersey',
             category: 'Jersey',
             team: 'Pittsburgh Pirates',
