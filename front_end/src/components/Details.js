@@ -41,7 +41,6 @@ export default function ProductScreen(props) {
                     </li>
                     <span className="name-span"></span>
                     </div>
-                    
               </ul>
             </div>
           </div>
