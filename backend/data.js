@@ -72,7 +72,7 @@ const data = {
             year: 2021,
             image: '../img/penguins/jscrosby87rr2021.jpg',
             price: 169.99,
-            profile: "../img/headshots/profile.jpg",
+            profile: "../img/headshots/crosby.jpg",
             countInStock: 100,
             brand: 'Adidas',
             rating: '4.9',
