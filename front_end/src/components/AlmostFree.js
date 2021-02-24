@@ -11,7 +11,7 @@ export default function AlmostFree() {
     <li>
         <div>
             {/* {almostFree} */}
-            BUTSS
+            
         </div>
     </li>
     )
