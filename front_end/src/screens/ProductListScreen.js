@@ -69,7 +69,7 @@ const deleteHandler = (product) => {
     dispatch(createProduct());
   };
   return (
-    <div className="height">
+    <div className="height margin-sides">
       <div className="row">
         <h1>Products</h1>
         <button type="button" className="primary" onClick={createHandler}>

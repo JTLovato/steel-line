@@ -29,7 +29,7 @@ const deleteHandler = (user) => {
   }
 };
   return (
-    <div className="height">
+    <div className="height margin-sides">
       <h1>Users</h1>
       {loadingDelete && <LoadingBox></LoadingBox>}
       {errorDelete && <MessageBox variant="danger">{errorDelete}</MessageBox>}
