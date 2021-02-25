@@ -1,18 +1,20 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 
-export default function AlmostFree() {
+export default function AlmostFree(props) {
 
-    // const almostFree = () => {
-    //     cart.totalPrice < 100 && cart.totalPrice > 49.99 && 
-    //     <p> If You Get ${100 - cart.totalPrice} More You Get Free Shipping!</p>
-    //   }
-
+    const cart = useSelector((state) => state.cart);
+    const newPrice = 100 - cart.totalPrice;
+    
+    if (cart.totalPrice < 100 && cart.totalPrice > 49.99) {
     return (
-    <li>
-        <div>
-            {/* {almostFree} */}
-            
+        <div className="almost-free">
+            <p>You'll Get Free Shipping For Adding Just ${newPrice.toFixed(2)} Worth Of Products!</p>
         </div>
-    </li>
     )
+    } else {
+        return null
+    }
 }
+    
+

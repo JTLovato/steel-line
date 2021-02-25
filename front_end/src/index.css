@@ -491,6 +491,15 @@ img.large {
   position: relative;
 }
 
+.almost-free {
+  background-color: #f6dd07;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  font-weight: 550;
+  border: 0.1rem #a4a4a4 solid;
+}
+
 /* Card */
 .card {
   border: 0.1rem #ebe8e8 solid;
