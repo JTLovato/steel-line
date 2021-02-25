@@ -25,6 +25,11 @@ export default function HomeScreen() {
       ) : (
         <>
           <div className="row center">
+            <div className="landingpage-row-mobile">
+              <Link to={`/search/name/penguins`} className="image-link"><img src="../img/shoppenguinsmobile.png" alt="Shop Penguins"></img></Link>
+              <Link to={`/search/name/steelers`} className="image-link"><img src="../img/shopsteelersmobile.png" alt="Shot Steelers"></img></Link>
+              <Link to={`/search/name/pirates`} className="image-link"><img src="../img/shoppiratesmobile.png" alt="Shop Pirates"></img></Link>
+            </div>
             <div className="landingpage-row">
               <Link to={`/search/name/penguins`} className="image-link"><img src="../img/shoppenguins.png" alt="Shop Penguins"></img></Link>
               <Link to={`/search/name/steelers`} className="image-link"><img src="../img/shopsteelers.png" alt="Shot Steelers"></img></Link>
@@ -61,8 +66,8 @@ export default function HomeScreen() {
                     15203, USA<br />
                   </address>
                 </div>
-                </div>
               </div>
+            </div>
               <div className="row home-image" style={{ 
                 backgroundImage: `url(${process.env.PUBLIC_URL 
                     + "/img/steelcity.jpg"})`, 

@@ -71,7 +71,7 @@ header {
 
 main {
   grid-area: main;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 footer {
@@ -84,7 +84,7 @@ footer {
 .contact-container {
   background-color: black;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 1rem 0;
 }
@@ -174,7 +174,7 @@ footer {
 .bottom-footer {
   width: 100%;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: #000;
@@ -289,7 +289,7 @@ a.brand {
   font-size: 3rem;
   font-weight: bold;
   padding: 0;
-  width: 40rem;
+  width: 20rem;
   display: flex;
   align-items: center;
   margin-left: 2rem;
@@ -841,8 +841,18 @@ img.card-large {
 }
 
 .landingpage-row {
+  display: none;
+}
+
+.landingpage-row-mobile {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.image-link img {
+  width: 37rem;
 }
 
 .secondary-row {
@@ -879,7 +889,6 @@ img.card-large {
 }
 
 .home-image {
-  margin: 5rem;
   margin-top: 7em;
   background-size: cover;
   text-align: center;
@@ -910,8 +919,7 @@ img.card-large {
 }
 
 .locations h1 {
-  width: 50rem;
-  font-size: 7rem;
+  font-size: 6rem;
   font-family: inversionz, Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
 }
@@ -923,12 +931,12 @@ img.card-large {
 }
 
 .info-holder {
-  width: 50rem;
+  width: 30rem;
   margin: 0 3rem;
 }
 
 .info-holder img {
-  width: 50rem;
+  width: 30rem;
 }
 
 .this-is-home-text {
@@ -962,10 +970,11 @@ img.card-large {
   text-align: center;
   padding: 0.5rem;
   z-index: 5;
+  font-size: 25%;
 }
 
 .discounts h1 {
-  font-size: 2.5rem;
+  font-size: 1rem;
   padding: 0;
   font-style: italic;
 }
@@ -1052,9 +1061,45 @@ img.card-large {
   .mainLogo {
     display: block;
   }
+
+  main {
+    margin-top: 4rem;
+  }
+
+  .landingpage-row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .landingpage-row-mobile {
+    display: none;
+  }
   
   .smallLogo {
     display: none;
+  }
+
+  .discounts {
+    font-size: 100%;
+  }
+
+  .locations h1 {
+    width: 100%;
+  }
+
+  .info-holder {
+    width: 50rem;
+  }
+  .info-holder img {
+    width: 50rem;
+  }
+
+  .home-image {
+    margin: 3rem;
+  }
+
+  .discounts h1 {
+    font-size: 100%;
   }
 
 

@@ -209,9 +209,6 @@ function App() {
             )}
           </div>
         </div>
-
-
-
         </aside>
 
         <main> 
@@ -281,41 +278,45 @@ function App() {
         </main>
         <footer>
           <div className="contact-container">
-                <div className="contact-container-card actual">
-                  <p>Contact Us</p>
-                  <div>
-                    <a href = "mailto: johnsawebdev@gmail.com.com">Email: johnsawebdev@gmail.com</a>
-                    <a href="tel:682-283-1972">Call: (682) 283-1972</a>
-                  </div>
-                </div>
-                <div className="contact-container-card">
-                  <p>Follow Us</p>
-                  <div>
-                    <a href="https://www.facebook.com/"><i className="fa fa-2x fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/JohnTLovato"><i className="fa fa-2x  fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/"><i className="fa fa-2x  fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/john-lovato-4295b3199/"><i className="fa fa-2x  fa-linkedin"></i></a>
-                  </div>
-                </div>
-                <div className="contact-container">
-                  <form id="newsletter-signup" onSubmit={submitHandler}>
-                    <label htmlFor="newsletter">Stay Connected</label>
-                    <label htmlFor="newsletter">Sign up for our email now for great deals</label>
-                    <div className="newsletter-submit">
-                      <input id="newsletter" type="text" className="newsletter-input" placeholder="Enter Email Here"></input>
-                      <button type="submit" className="newsletter-button" >Sign Up</button>
-                    </div>
-                  </form>
-                  <div id="thanks" className="thanks">
-                    <h1>Thanks!</h1>
-                    <p>You'll be signed up for all the news and great deals from now on.</p>
-                  </div>
-                </div>
+            <div className="contact-container-card actual">
+              <p>Contact Us</p>
+              <div>
+                <a href = "mailto: johnsawebdev@gmail.com.com">Email: johnsawebdev@gmail.com</a>
+                <a href="tel:682-283-1972">Call: (682) 283-1972</a>
               </div>
-          <div className="bottom-footer">
-                <a href="https://www.privacypolicygenerator.info/">Privacy Policy</a> <p>&#47;&#47;&#47;&#47;</p> <a href="https://www.termsofusegenerator.net/">Terms Of Use</a> <p>&#47;&#47;&#47;&#47;</p> <a href="#top">&copy; {year} Steel | Line</a>
+            </div>
+            <div className="contact-container-card">
+              <p>Follow Us</p>
+              <div>
+                <a href="https://www.facebook.com/"><i className="fa fa-2x fa-facebook-f"></i></a>
+                <a href="https://twitter.com/JohnTLovato"><i className="fa fa-2x  fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i className="fa fa-2x  fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/john-lovato-4295b3199/"><i className="fa fa-2x  fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div className="contact-container">
+              <form id="newsletter-signup" onSubmit={submitHandler}>
+                <label htmlFor="newsletter">Stay Connected</label>
+                <label htmlFor="newsletter">Sign up for our email now for great deals</label>
+                <div className="newsletter-submit">
+                  <input id="newsletter" type="text" className="newsletter-input" placeholder="Enter Email Here"></input>
+                  <button type="submit" className="newsletter-button" >Sign Up</button>
+                </div>
+              </form>
+              <div id="thanks" className="thanks">
+                <h1>Thanks!</h1>
+                <p>You'll be signed up for all the news and great deals from now on.</p>
+              </div>
+            </div>
           </div>
-          </footer>
+          <div className="bottom-footer">
+            <a href="https://www.privacypolicygenerator.info/">Privacy Policy</a> 
+            <p>&#47;&#47;&#47;&#47;</p> 
+            <a href="https://www.termsofusegenerator.net/">Terms Of Use</a> 
+            <p>&#47;&#47;&#47;&#47;</p> 
+            <a href="#top">&copy; {year} Steel | Line</a>
+          </div>
+        </footer>
       </div>
     </BrowserRouter>
 );
