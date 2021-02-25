@@ -109,13 +109,13 @@ useEffect(() => {
                   <div>${cart.shippingPrice.toFixed(2)}</div>
                 </div>
               </li>
+              <AlmostFree />
               <li>
                 <div className="row">
                   <div>Tax</div>
                   <div>${cart.taxPrice.toFixed(2)}</div>
                 </div>
               </li>
-              <AlmostFree />
               <li>
                 <div className="row">
                   <div>
