@@ -411,9 +411,7 @@ aside {
 
 .pgh {
   width: 100%;
-  margin-top: 5rem;
-  /* Deploy didn't allow opacity */
-  /* opacity: 20%; */
+  opacity: .2;
 }
 
 aside a,
@@ -824,8 +822,7 @@ img.large {
 
 .player-details {
   font-size: 8rem;
-/* Heroku doesn't allow opacity */
-  /* opacity: 15%; */
+  opacity: .15;
 }
 
 .player-top-left {
