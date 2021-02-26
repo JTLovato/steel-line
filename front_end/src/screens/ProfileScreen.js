@@ -6,10 +6,10 @@ import MessageBox from '../components/MessageBox';
 import { USER_UPDATE_PROFILE_RESET } from '../constants/userConstants';
 
 export default function ProfileScreen() {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [confirmPassword, setConfirmPassword] = useState('');  
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');  
 
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
@@ -60,7 +60,7 @@ export default function ProfileScreen() {
           <MessageBox variant="danger">{error}</MessageBox>
         ) : (
           <>
-                      {loadingUpdate && <LoadingBox></LoadingBox>}
+            {loadingUpdate && <LoadingBox></LoadingBox>}
             {errorUpdate && (
               <MessageBox variant="danger">{errorUpdate}</MessageBox>
             )}

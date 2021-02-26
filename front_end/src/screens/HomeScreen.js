@@ -47,7 +47,7 @@ export default function HomeScreen() {
               <h1>LOCATIONS</h1>
               <div className="info-card-holder">
                 <div className="info-holder">
-                  <img src="../img/storeshot.jpg" alt="Steel Line's First Store"></img>
+                  <img src="../img/storeshot1.jpg" alt="Steel Line's First Store"></img>
                   <p>The OG, the one that started it all. Visit us at our first ever store, at</p>
                   <address>
                     The Strip District<br />
@@ -71,8 +71,9 @@ export default function HomeScreen() {
               <div className="row home-image" style={{ 
                 backgroundImage: `url(${process.env.PUBLIC_URL 
                     + "/img/steelcity.jpg"})`, 
-                 backgroundRepeat: "no-repeat"
-                  }} > 
+                  backgroundRepeat: "no-repeat"
+                }} 
+              > 
                 <div className="home-text">
                   <h1>HOME</h1>
                   <p>Pittburgh. The city of Bridges, The Steel City, the Buckle on the Rust Belt. This town has a lot of nicknames, and for good reason. Since day 1 Pittsburgh has home to some of the hardest working individuals in the country, and we take pride in that. Sureally unique and beatiful in it's majesty, Pittsburgh's residents all love one thing; The Black & Yellow. The city flag, bars of black and yellow, have translated to our sports teams and given us all champions to root for.Home of the six time Superbowl Champions Steelers, the five time Stanley Cup Champions Penguins, and the five time World Series Champions Pirates, plus so many more.</p>
@@ -98,4 +99,5 @@ export default function HomeScreen() {
         </>
       )}
     </div>
-  )}
+  )
+}

@@ -15,6 +15,7 @@ userRouter.get('/top-sellers', expressAsyncHandler(async(req, res) => {
 userRouter.get(
   '/seed',
   expressAsyncHandler(async (req, res) => {
+    // DO NOT REMOVE, ISED FOR USER SEEDING
     // await User.remove({});
     const createdUsers = await User.insertMany(data.users);
     res.send({ createdUsers });
@@ -40,6 +41,7 @@ userRouter.post(
     res.status(401).send({ message: 'Invalid Email Or Password, Please Try Again' });
   })
 );
+
 userRouter.post(
   '/register',
   expressAsyncHandler(async (req, res) => {
@@ -59,6 +61,7 @@ userRouter.post(
     });
   })
 );
+
 userRouter.get(
   '/:id',
   expressAsyncHandler(async (req, res) => {
@@ -70,6 +73,7 @@ userRouter.get(
     }
   })
 );
+
 userRouter.put(
   '/profile',
   isAuth,
@@ -99,6 +103,7 @@ userRouter.put(
     }
   })
 );
+
 userRouter.get(
   '/',
   isAuth,
@@ -108,6 +113,7 @@ userRouter.get(
     res.send(users);
   })
 );
+
 userRouter.delete(
   '/:id',
   isAuth,
@@ -144,7 +150,5 @@ userRouter.put(
     }
   })
 );
-
-
 
 export default userRouter;

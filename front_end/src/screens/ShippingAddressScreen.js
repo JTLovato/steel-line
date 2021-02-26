@@ -4,6 +4,7 @@ import { saveShippingAddress } from '../actions/cartActions';
 import CheckoutSteps from '../components/CheckoutSteps';
 
 export default function ShippingAddressScreen(props) {
+  
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
   const cart = useSelector((state) => state.cart);
@@ -24,6 +25,7 @@ export default function ShippingAddressScreen(props) {
     );
     props.history.push('/payment');
   };
+
   return (
     <div className="height">
       <CheckoutSteps step1 step2></CheckoutSteps>

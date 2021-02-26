@@ -4,6 +4,7 @@ import { savePaymentMethod } from '../actions/cartActions';
 import CheckoutSteps from '../components/CheckoutSteps';
 
 export default function PaymentMethodScreen(props) {
+  
   const cart = useSelector((state) => state.cart);
   const { shippingAddress } = cart;
   if (!shippingAddress.address) {
@@ -16,6 +17,7 @@ export default function PaymentMethodScreen(props) {
     dispatch(savePaymentMethod(paymentMethod));
     props.history.push('/placeorder');
   };
+
   return (
     <div className="height">
       <CheckoutSteps step1 step2 step3></CheckoutSteps>

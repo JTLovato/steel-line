@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { createReview, detailsProduct } from '../actions/productActions';
@@ -9,48 +10,48 @@ import { PRODUCT_REVIEW_CREATE_RESET } from '../constants/productConstants';
 import Details from '../components/Details'
 
 export default function ProductScreen(props) {
-    const dispatch = useDispatch();
-    const productId = props.match.params.id;
-    const [qty, setQty] = useState(1);
-    const productDetails = useSelector((state) => state.productDetails);
-    const { loading, error, product } = productDetails;
-    const userSignin = useSelector((state) => state.userSignin);
-    const { userInfo } = userSignin;
+  const dispatch = useDispatch();
+  const productId = props.match.params.id;
+  const [qty, setQty] = useState(1);
+  const productDetails = useSelector((state) => state.productDetails);
+  const { loading, error, product } = productDetails;
+  const userSignin = useSelector((state) => state.userSignin);
+  const { userInfo } = userSignin;
+
+  const productReviewCreate = useSelector((state) => state.productReviewCreate);
+  const {
+    loading: loadingReviewCreate,
+    error: errorReviewCreate,
+    success: successReviewCreate,
+  } = productReviewCreate;
+
+  const [rating, setRating] = useState(0);
+  const [comment, setComment] = useState('');
+
+  useEffect(() => {
+    if (successReviewCreate) {
+      window.alert('Review Submitted Successfully');
+      setRating('');
+      setComment('');
+      dispatch({ type: PRODUCT_REVIEW_CREATE_RESET });
+    }
+    dispatch(detailsProduct(productId));
+  }, [dispatch, productId, successReviewCreate]);
+  const addToCartHandler = () => {
+    props.history.push(`/cart/${productId}?qty=${qty}`);
+  };
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if (comment && rating) {
+      dispatch(
+        createReview(productId, { rating, comment, name: userInfo.name })
+      );
+    } else {
+      alert('Please enter comment and rating');
+    }
+  };
   
-    const productReviewCreate = useSelector((state) => state.productReviewCreate);
-    const {
-      loading: loadingReviewCreate,
-      error: errorReviewCreate,
-      success: successReviewCreate,
-    } = productReviewCreate;
-  
-    const [rating, setRating] = useState(0);
-    const [comment, setComment] = useState('');
-  
-    useEffect(() => {
-      if (successReviewCreate) {
-        window.alert('Review Submitted Successfully');
-        setRating('');
-        setComment('');
-        dispatch({ type: PRODUCT_REVIEW_CREATE_RESET });
-      }
-      dispatch(detailsProduct(productId));
-    }, [dispatch, productId, successReviewCreate]);
-    const addToCartHandler = () => {
-      props.history.push(`/cart/${productId}?qty=${qty}`);
-    };
-    const submitHandler = (e) => {
-      e.preventDefault();
-      if (comment && rating) {
-        dispatch(
-          createReview(productId, { rating, comment, name: userInfo.name })
-        );
-      } else {
-        alert('Please enter comment and rating');
-      }
-    };
-    
-    return (
+  return (
     <div className="height">
       {loading ? (
         <LoadingBox></LoadingBox>
@@ -229,7 +230,7 @@ export default function ProductScreen(props) {
             </ul>
           </div>
         </div>
-   )}
-   </div>
- );
+      )}
+    </div>
+  );
 }

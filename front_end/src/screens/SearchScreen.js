@@ -9,16 +9,16 @@ import Rating from '../components/Rating';
 import { prices, ratings, teams } from '../utils';
 
 export default function SearchScreen(props) {
-    const {
-        name = 'all',
-        category = 'all',
-        team = 'all',
-        min = 0,
-        max = 0,
-        rating = 0,
-        order = 'highest',
-        pageNumber = 1,
-      } = useParams();
+  const {
+      name = 'all',
+      category = 'all',
+      team = 'all',
+      min = 0,
+      max = 0,
+      rating = 0,
+      order = 'highest',
+      pageNumber = 1,
+    } = useParams();
   const dispatch = useDispatch();
 
   const productList = useSelector((state) => state.productList);
@@ -54,7 +54,7 @@ export default function SearchScreen(props) {
     const sortOrder = filter.order || order;
     const filterMin = filter.min ? filter.min : filter.min === 0 ? 0 : min;
     const filterMax = filter.max ? filter.max : filter.max === 0 ? 0 : max;
-   return `/search/category/${filterCategory}/name/${filterName}/min/${filterMin}/max/${filterMax}/rating/${filterRating}/order/${sortOrder}/pageNumber/${filterPage}`;
+    return `/search/category/${filterCategory}/name/${filterName}/min/${filterMin}/max/${filterMax}/rating/${filterRating}/order/${sortOrder}/pageNumber/${filterPage}`;
 };
 
   return (
@@ -142,10 +142,9 @@ export default function SearchScreen(props) {
               </div>
             </ul>
           </div>
-
           // <>{products.length} Results</>
         )}
-          <div>
+        <div>
           Sort by{' '}
           <select
             value={order}
@@ -161,48 +160,46 @@ export default function SearchScreen(props) {
           </select>
         </div>
       </div>
-
-    
-        <div className="col-3">
-          {loading ? (
-            <LoadingBox></LoadingBox>
-          ) : error ? (
-            <MessageBox variant="danger">{error}</MessageBox>
-          ) : (
-            <>
-              {products.length === 0 && (
-                <MessageBox>No Product Found</MessageBox>
-              )}
-                         <div className="row center pagination">
-                {[...Array(pages).keys()].map((x) => (
-                  <Link
-                    className={x + 1 === page ? 'active' : ''}
-                    key={x + 1}
-                    to={getFilterUrl({ page: x + 1 })}
-                  >
-                    {x + 1}
-                  </Link>
-                ))}
-              </div>
-              <div className="row center">
-                {products.map((product) => (
-                  <Product key={product._id} product={product}></Product>
-                ))}
-              </div>
-              <div className="row center pagination">
-                {[...Array(pages).keys()].map((x) => (
-                  <Link
-                    className={x + 1 === page ? 'active' : ''}
-                    key={x + 1}
-                    to={getFilterUrl({ page: x + 1 })}
-                  >
-                    {x + 1}
-                  </Link>
-                ))}
-              </div>
-            </>
-          )}
-        </div>
+      <div className="col-3">
+        {loading ? (
+          <LoadingBox></LoadingBox>
+        ) : error ? (
+          <MessageBox variant="danger">{error}</MessageBox>
+        ) : (
+          <>
+            {products.length === 0 && (
+              <MessageBox>No Product Found</MessageBox>
+            )}
+            <div className="row center pagination">
+              {[...Array(pages).keys()].map((x) => (
+                <Link
+                  className={x + 1 === page ? 'active' : ''}
+                  key={x + 1}
+                  to={getFilterUrl({ page: x + 1 })}
+                >
+                  {x + 1}
+                </Link>
+              ))}
+            </div>
+            <div className="row center">
+              {products.map((product) => (
+                <Product key={product._id} product={product}></Product>
+              ))}
+            </div>
+            <div className="row center pagination">
+              {[...Array(pages).keys()].map((x) => (
+                <Link
+                  className={x + 1 === page ? 'active' : ''}
+                  key={x + 1}
+                  to={getFilterUrl({ page: x + 1 })}
+                >
+                  {x + 1}
+                </Link>
+              ))}
+            </div>
+          </>
+        )}
       </div>
+    </div>
   );
 }

@@ -22,12 +22,13 @@ export default function UserListScreen(props) {
     dispatch({
         type: USER_DETAILS_RESET,
       });
-}, [dispatch, successDelete]);
-const deleteHandler = (user) => {
-  if (window.confirm('Are You Sure? You Cannot Bring Them Back.')) {
-    dispatch(deleteUser(user._id));
-  }
-};
+  }, [dispatch, successDelete]);
+  const deleteHandler = (user) => {
+    if (window.confirm('Are You Sure? You Cannot Bring Them Back.')) {
+      dispatch(deleteUser(user._id));
+    }
+  };
+
   return (
     <div className="height margin-sides">
       <h1>Users</h1>
@@ -59,7 +60,7 @@ const deleteHandler = (user) => {
                 <td>{user.email}</td>
                 <td>{user.isAdmin ? 'YES' : 'NO'}</td>
                 <td>
-                <button
+                  <button
                     type="button"
                     className="small"
                     onClick={() => props.history.push(`/user/${user._id}/edit`)}

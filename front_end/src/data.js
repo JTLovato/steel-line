@@ -1231,7 +1231,7 @@ const data = {
         numReviews: 56,
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and Mason Rudolph graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
-{
+    {
         name: 'Mason Rudolph Pittsburgh Steelers Nike Away Jersey',
         category: 'Jersey',
         team: 'Pittsburgh Steelers',
@@ -1249,7 +1249,7 @@ const data = {
         numReviews: 87,
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and Mason Rudolph graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
-{
+    {
         name: 'Alejandro Villanueva Pittsburgh Steelers Nike Home Jersey',
         category: 'Jersey',
         team: 'Pittsburgh Steelers',
@@ -1267,7 +1267,7 @@ const data = {
         numReviews: 47,
         description: 'Celebrate your Pittsburgh Steelers fandom with this Game Football jersey by Nike. It features printed Pittsburgh Steelers and Alejandro Villanueva graphics letting everyone know who you cheer for. You will boast your team spirit with this Pittsburgh Steelers jersey\! ',
     },
-{
+    {
         name: 'Alejandro Villanueva Pittsburgh Steelers Nike Away Jersey',
         category: 'Jersey',
         team: 'Pittsburgh Steelers',
