@@ -149,66 +149,55 @@ function App() {
         </div>
         </header>
         <aside className={sidebarIsOpen ? 'open': ''}>
-                <div className="categories">
-                    <button onClick={() => setSidebarIsOpen(false)}
-                      className="close-sidebar"
-                      type="button">
-                      <i className="fa fa-close"></i>
-                    </button>
-                </div>
-          <div className=" row center aside">
-            <div className="search">               
-              <Route 
-                render={({history}) => 
+          <button onClick={() => setSidebarIsOpen(false)}
+            className="close-sidebar"
+            type="button">
+              X
+          </button>
+          <div className="row center aside">        
+            <Route 
+              render={({history}) => 
                 <SearchBox 
-                  history={history}
+                history={history}
                 ></SearchBox>}
-              ></Route>
-            </div>
-            <div>
-            <div className="cart-hold">
+            ></Route>
+            <div className="aside-item">
               <Link to="/cart">
-                Your Cart
+                <p>Your Cart</p>
                 {cartItems.length > 0 && (
-                  <span className="badge">{cartItems.length}</span>
+                <span className="badge">{cartItems.length}</span>
                 )}
               </Link>
-              </div>
               {userInfo ? (
-                <div className="aside-items">
-                  <div className="aside-title">
-                    {userInfo.name}
-                  </div>         
-                  <div className="aside-place">   
+                <div className="aside-item">
+                  <p>{userInfo.name}</p>       
                   <Link to="/profile">User Profile</Link>              
                   <Link to="/orderhistory">Order History</Link>
                   <Link to="#signout" onClick={signoutHandler}>
                     Sign Out
                   </Link>
-                  </div>
                 </div>
-            ) : (
-              <Link to="/signin">Sign In</Link>
-            )}
+              ) : (
+                <Link to="/signin">Sign In</Link>
+              )}
               {userInfo && userInfo.isAdmin && (
-              <div>
-                <div className="aside-title">
-                  Admin Links
-                </div>
+                <div className="aside-item">     
+                  <p>Admin Links</p>
                   {/* coming soon */}
                     {/* <li>
                       <Link to="/dashboard">Dashboard</Link>
                     </li> */}
                   {/* coming soon */}
-                  <div className="aside-place">
-                    <Link to="/productlist">Products</Link>
-                    <Link to="/orderlist">Orders</Link>
-                    <Link to="/userlist">Users</Link>
-                    </div>
-              </div>
-            )}
+                  <Link to="/productlist">Products</Link>
+                  <Link to="/orderlist">Orders</Link>
+                  <Link to="/userlist">Users</Link>
+                </div>
+              )}
+            </div>
+            <div className="aside-under">
+            <img className="pgh" src="/img/pghwhite.png" alt=""></img>
+            </div>
           </div>
-        </div>
         </aside>
 
         <main> 

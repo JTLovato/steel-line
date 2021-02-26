@@ -65,12 +65,91 @@ export default function SearchScreen(props) {
         ) : error ? (
           <MessageBox variant="danger">{error}</MessageBox>
         ) : (
-          <div>{products.length} Results</div>
+          <div className="dropdown refine-mobile">
+            <Link className="refine-button" to="#admin">
+              Refine Search <i className="fa fa-caret-down"></i>
+            </Link>
+            <ul className="dropdown-content refine-search-box">  
+              <div className="col-1 margin-sides">
+                <h3>Categories</h3>
+                <div>
+                  {loadingCategories ? (
+                    <LoadingBox></LoadingBox>
+                  ) : errorCategories ? (
+                    <MessageBox variant="danger">{errorCategories}</MessageBox>
+                  ) : (
+                  <ul>
+                    {categories.map((c) => (
+                      <li className="side-item" key={c}>
+                        <Link
+                          className={c === category ? 'active' : ''}
+                          to={getFilterUrl({ category: c })}
+                        >
+                          {c}s
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+              <div>
+                <h3>Teams</h3>
+                  <ul>
+                    {teams.map((t) => (
+                      <li className="side-item" key={t.team}>
+                        <Link
+                          to={getFilterUrl({ team: t.team })}
+                          className={`${t.team}` === `${team}` ? 'active' : ''}
+                        >
+                          {t.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3>Price</h3>
+                  <ul>
+                    {prices.map((p) => (
+                      <li className="side-item" key={p.name}>
+                        <Link
+                          to={getFilterUrl({ min: p.min, max: p.max })}
+                          className={
+                            `${p.min}-${p.max}` === `${min}-${max}` ? 'active' : ''
+                          }
+                        >
+                          {p.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3>Avg. Customer Review</h3>
+                  <ul>
+                    {ratings.map((r) => (
+                      <li className="side-item" key={r.name}>
+                        <Link
+                          to={getFilterUrl({ rating: r.rating })}
+                          className={`${r.rating}` === `${rating}` ? 'active' : ''}
+                        >
+                          <Rating caption={' & up'} rating={r.rating}></Rating>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
+
+          // <>{products.length} Results</>
         )}
           <div>
           Sort by{' '}
           <select
             value={order}
+            className="select-order"
             onChange={(e) => {
               props.history.push(getFilterUrl({ order: e.target.value }));
             }}
@@ -82,79 +161,8 @@ export default function SearchScreen(props) {
           </select>
         </div>
       </div>
-      <div className="row top">
-        <div className="col-1 margin-sides">
-        <h3>Categories</h3>
-          <div>
-            {loadingCategories ? (
-              <LoadingBox></LoadingBox>
-            ) : errorCategories ? (
-              <MessageBox variant="danger">{errorCategories}</MessageBox>
-            ) : (
-              <ul>
-                {categories.map((c) => (
-                  <li key={c}>
-                    <Link
-                      className={c === category ? 'active' : ''}
-                      to={getFilterUrl({ category: c })}
-                    >
-                      {c}s
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-          <div>
-            <h3>Teams</h3>
-            <ul>
-              {teams.map((t) => (
-                <li key={t.team}>
-                  <Link
-                    to={getFilterUrl({ team: t.team })}
-                    className={`${t.team}` === `${team}` ? 'active' : ''}
-                  >
-                        {t.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
 
-
-          <div>
-            <h3>Price</h3>
-            <ul>
-              {prices.map((p) => (
-                <li key={p.name}>
-                  <Link
-                    to={getFilterUrl({ min: p.min, max: p.max })}
-                    className={
-                      `${p.min}-${p.max}` === `${min}-${max}` ? 'active' : ''
-                    }
-                  >
-                    {p.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            </div>
-          <div>
-            <h3>Avg. Customer Review</h3>
-            <ul>
-              {ratings.map((r) => (
-                <li key={r.name}>
-                  <Link
-                    to={getFilterUrl({ rating: r.rating })}
-                    className={`${r.rating}` === `${rating}` ? 'active' : ''}
-                  >
-                    <Rating caption={' & up'} rating={r.rating}></Rating>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+    
         <div className="col-3">
           {loading ? (
             <LoadingBox></LoadingBox>
@@ -196,6 +204,5 @@ export default function SearchScreen(props) {
           )}
         </div>
       </div>
-    </div>
   );
 }

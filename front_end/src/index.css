@@ -314,6 +314,10 @@ a.brand {
   font-weight: 700;
   margin-left: 0.2rem;
 }
+
+.select-order {
+  width: 10rem;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -379,15 +383,50 @@ a.brand {
 
 aside {
   position: fixed;
-  width:30rem;
+  width:100%;
   height: 100%;
-  background-color: #efefef;
+  background-color: #000;
+  opacity: 90%;
   z-index: 100;
   right: 0;
-  transform: translateX(35rem);
+  transform: translateX(100%);
   transition: all 0.5s;
-  padding: 2rem;
-  border-right: 2px solid #e9e9e9;
+  text-align: center;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.aside-item,
+.aside-item a {
+  width: 100%;
+  display: block;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.aside-item a:hover {
+  transition: all 0.25s;
+  background-color: #f0c040;
+  color: #000;
+}
+
+.pgh {
+  width: 100%;
+  margin-top: 5rem;
+  opacity: 20%;
+}
+
+aside a,
+aside p {
+  color: #fff;
+  width: 100%;
+  font-size: 2rem;
+}
+
+aside a:hover,
+aside p:hover {
+  color: #f0c040;
+  transition: all 0.5s;
 }
 
 aside.open {
@@ -429,10 +468,14 @@ button.open-sidebar {
 
 .aside {
    text-align: center;
+   width: 100%;
+   margin-top: 3rem;
 }
 
-.aside a {
+.aside p {
   text-decoration: underline;
+  font-size: 3rem;
+  margin: 1rem;
 }
 
 .aside-place a {
@@ -459,6 +502,12 @@ aside li {
 
 button.close-sidebar {
   padding: 0.3rem 0.8rem;
+  height: 8rem;
+  width: 8rem;
+  font-size: 6rem;
+  background: none;
+  color: #fff;
+  margin: 1rem;
 }
 
 /* Image */
@@ -710,6 +759,36 @@ img.large {
   margin-left: 0.5rem;
 }
 
+.refine {
+  display: none;
+}
+
+.refine-button {
+  background-color: #f0c040;
+  padding: 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  width: 15rem;
+}
+
+.refine-mobile {
+  width: 15rem;
+  z-index: 1;
+  display: block;
+}
+
+.refine-search-box {
+  width: 15rem;
+  background-color: #fff;
+  border: 0.5rem solid #f0c040;
+  border-radius: 0.5rem;
+  right: 0rem;
+  text-align: center;
+}
+
+.refine-button ul {
+  right: 5rem;
+}
+
 .active {
   font-weight: bold;
 }
@@ -725,6 +804,21 @@ img.large {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.side-item {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.side-item a:hover {
+  box-shadow: none;
+}
+
+.side-item:hover {
+  background-color: #f0c040;
+  transition: all 0.25s;
+  box-shadow: none;
 }
 
 .pagination a:hover {
@@ -1102,9 +1196,12 @@ img.card-large {
     font-size: 100%;
   }
 
-
   .open-sidebar {
     display: none;
+  }
+
+  .select-order {
+    min-width: 25rem;
   }
 
   #header-right {
