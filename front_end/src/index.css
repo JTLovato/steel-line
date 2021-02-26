@@ -585,17 +585,6 @@ img.large {
 
 /* Product highlight */
 
-.city {
-  transform: rotate(-90deg) scale(1, 1.5);
-  position: absolute;
-  left: -15rem;
-  top: 28rem;
-  font-size: 6rem;
-  z-index:1;
-  /* heroku doesnt allow opacity */
-  /* opacity: 15%; */
-}
-
 .city p {
     margin: 0;
 }

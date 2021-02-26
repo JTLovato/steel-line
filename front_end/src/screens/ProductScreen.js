@@ -62,9 +62,6 @@ export default function ProductScreen(props) {
 
             {/* left side */}
             <div className="col-2 yellow">
-              <div className="city">
-                <p>PITTSBURGH</p>
-              </div>
               <div className="product-highlight">
                 <img
                   className="large"
