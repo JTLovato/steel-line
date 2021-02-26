@@ -412,7 +412,8 @@ aside {
 .pgh {
   width: 100%;
   margin-top: 5rem;
-  opacity: 20%;
+  /* Deploy didn't allow opacity */
+  /* opacity: 20%; */
 }
 
 aside a,
@@ -591,7 +592,8 @@ img.large {
   top: 28rem;
   font-size: 6rem;
   z-index:1;
-  opacity: 15%;
+  /* heroku doesnt allow opacity */
+  /* opacity: 15%; */
 }
 
 .city p {
@@ -833,7 +835,8 @@ img.large {
 
 .player-details {
   font-size: 8rem;
-  opacity: 15%;
+/* Heroku doesn't allow opacity */
+  /* opacity: 15%; */
 }
 
 .player-top-left {
