@@ -43,6 +43,11 @@ function App() {
     dispatch(listProductCategories())
   }, [dispatch])
 
+
+  const closeSideBar = () => {
+  setSidebarIsOpen(false)
+  }
+
   const submitHandler = (e) => {
     e.preventDefault();
     const newsletterSignup = document.getElementById("newsletter-signup");
@@ -84,7 +89,7 @@ function App() {
             >
               <i className="fa fa-bars"></i>
             </button>
-          <div id="header-right" className="header-right row center ">
+          <div id="header-right" className="header-right row center">
             <div>
               <Route 
                 render={({history}) => 
@@ -162,7 +167,7 @@ function App() {
                 ></SearchBox>}
             ></Route>
             <div className="aside-item">
-              <Link to="/cart">
+              <Link to="/cart"  onClick={closeSideBar}>
                 <p>Your Cart</p>
                 {cartItems.length > 0 && (
                 <span className="badge">{cartItems.length}</span>
@@ -171,14 +176,14 @@ function App() {
               {userInfo ? (
                 <div className="aside-item">
                   <p>{userInfo.name}</p>       
-                  <Link to="/profile">User Profile</Link>              
-                  <Link to="/orderhistory">Order History</Link>
+                  <Link to="/profile" onClick={closeSideBar}>User Profile</Link>              
+                  <Link to="/orderhistory" onClick={closeSideBar}>Order History</Link>
                   <Link to="#signout" onClick={signoutHandler}>
                     Sign Out
                   </Link>
                 </div>
               ) : (
-                <Link to="/signin">Sign In</Link>
+                <Link to="/signin" onClick={closeSideBar}>Sign In</Link>
               )}
               {userInfo && userInfo.isAdmin && (
                 <div className="aside-item">     
@@ -188,9 +193,9 @@ function App() {
                       <Link to="/dashboard">Dashboard</Link>
                     </li> */}
                   {/* coming soon */}
-                  <Link to="/productlist">Products</Link>
-                  <Link to="/orderlist">Orders</Link>
-                  <Link to="/userlist">Users</Link>
+                  <Link to="/productlist" onClick={closeSideBar}>Products</Link>
+                  <Link to="/orderlist" onClick={closeSideBar}>Orders</Link>
+                  <Link to="/userlist" onClick={closeSideBar}>Users</Link>
                 </div>
               )}
             </div>
