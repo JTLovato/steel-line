@@ -130,6 +130,7 @@ useEffect(() => {
                 <button
                   type="button"
                   onClick={placeOrderHandler}
+                  aria-label="Place Order"
                   className="primary block"
                   disabled={cart.cartItems.length === 0}
                 >

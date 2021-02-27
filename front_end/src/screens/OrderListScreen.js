@@ -68,6 +68,7 @@ export default function OrderListScreen(props) {
                   <button
                     type="button"
                     className="small"
+                    aria-label="details"
                     onClick={() => {
                       props.history.push(`/order/${order._id}`);
                     }}
@@ -77,6 +78,7 @@ export default function OrderListScreen(props) {
                   <button
                     type="button"
                     className="small"
+                    aria-label="delete"
                     onClick={() => deleteHandler(order)}
                   >
                     Delete

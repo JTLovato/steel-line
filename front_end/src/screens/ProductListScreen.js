@@ -72,7 +72,12 @@ const deleteHandler = (product) => {
     <div className="height margin-sides">
       <div className="row">
         <h1>Products</h1>
-        <button type="button" className="primary" onClick={createHandler}>
+        <button 
+          type="button" 
+          className="primary" 
+          aria-label="Create Product"
+          onClick={createHandler}
+        >
           Create Product
         </button>
       </div>
@@ -109,6 +114,7 @@ const deleteHandler = (product) => {
                     <button
                       type="button"
                       className="small"
+                      aria-label="Edit"
                       onClick={() =>
                         props.history.push(`/product/${product._id}/edit`)
                       }
@@ -118,6 +124,7 @@ const deleteHandler = (product) => {
                     <button
                       type="button"
                       className="small"
+                      aria-label="Delete"
                       onClick={() => deleteHandler(product)}
                     >
                       Delete

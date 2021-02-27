@@ -4,7 +4,7 @@ import { saveShippingAddress } from '../actions/cartActions';
 import CheckoutSteps from '../components/CheckoutSteps';
 
 export default function ShippingAddressScreen(props) {
-  
+
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
   const cart = useSelector((state) => state.cart);
@@ -90,7 +90,11 @@ export default function ShippingAddressScreen(props) {
         </div>
         <div>
           <label />
-          <button className="primary" type="submit">
+          <button 
+            className="primary" 
+            type="submit"
+            aria-label="Continue"
+          >
             Continue
           </button>
         </div>

@@ -264,7 +264,11 @@ export default function ProductEditScreen(props) {
             </div>
             <div>
               <label></label>
-              <button className="primary" type="submit">
+              <button 
+                className="primary" 
+                type="submit"
+                aria-label="Update"  
+              >
                 Update
               </button>
             </div>

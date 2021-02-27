@@ -56,7 +56,11 @@ export default function SigninScreen(props) {
         </div>
         <div>
           <label />
-          <button className="primary" type="submit">
+          <button 
+            className="primary" 
+            type="submit"
+            aria-label="Sign In"
+          >
             Sign In
           </button>
         </div>

@@ -68,6 +68,7 @@ export default function CartScreen(props) {
                   <div>${item.price}</div>
                   <div>
                     <button
+                      aria-label="delete product"
                       type="button"
                       onClick={() => removeFromCartHandler(item.product)}
                     >
@@ -91,6 +92,7 @@ export default function CartScreen(props) {
             </li>
             <li>
               <button
+                aria-label="checkout"
                 type="button"
                 onClick={checkoutHandler}
                 className="primary block"

@@ -63,6 +63,7 @@ export default function UserListScreen(props) {
                   <button
                     type="button"
                     className="small"
+                    aria-label="Edit"
                     onClick={() => props.history.push(`/user/${user._id}/edit`)}
                   >
                     Edit
@@ -70,6 +71,7 @@ export default function UserListScreen(props) {
                   <button
                     type="button"
                     className="small"
+                    aria-label="Delete"
                     onClick={() => deleteHandler(user)}
                   >
                     Delete

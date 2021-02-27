@@ -109,7 +109,11 @@ export default function ProfileScreen() {
             </div>
             <div>
               <label />
-              <button className="primary" type="submit">
+              <button 
+                className="primary" 
+                type="submit"
+                aria-label="Update"
+              >
                 Update
               </button>
             </div>

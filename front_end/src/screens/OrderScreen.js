@@ -213,6 +213,7 @@ export default function OrderScreen(props) {
                   <button
                     type="button"
                     className="primary block"
+                    aria-label="Mark As Delivered"
                     onClick={deliverHandler}
                   >
                     Mark Order As Delivered

@@ -102,7 +102,7 @@ export default function ProductScreen(props) {
             </div>
 
             {/* right side */}
-            <div className="col-1">
+            <div className="col-1 center">
               <div className="card card-body">
                 <ul>
                   <li>
@@ -148,6 +148,7 @@ export default function ProductScreen(props) {
                         <button
                           onClick={addToCartHandler}
                           className="primary block"
+                          aria-label="Add to cart"
                         >
                           Add to Cart
                         </button>
@@ -208,7 +209,11 @@ export default function ProductScreen(props) {
                     </div>
                     <div>
                       <label />
-                      <button className="primary" type="submit">
+                      <button 
+                        className="primary" 
+                        type="submit"
+                        aria-label="Submit"
+                      >
                         Submit
                       </button>
                     </div>

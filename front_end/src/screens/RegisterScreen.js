@@ -82,7 +82,11 @@ export default function RegisterScreen(props) {
         </div>
         <div>
           <label />
-          <button className="primary" type="submit">
+          <button 
+            className="primary" 
+            type="submit"
+            aria-label="Register"  
+          >
             Register
           </button>
         </div>

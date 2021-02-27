@@ -24,6 +24,7 @@ import UserListScreen from './screens/UserListScreen';
 import UserEditScreen from './screens/UserEditScreen';
 import SearchScreen from './screens/SearchScreen';
 import PageNotFound from './screens/PageNotFoundScreen';
+import Popup from './components/Popup';
 
 
 
@@ -54,7 +55,6 @@ function App() {
     const thanks = document.getElementById("thanks");
     newsletterSignup.style.display = "none";
     thanks.style.display = "block";
-
   };
 
   const year = new Date().getFullYear();
@@ -66,9 +66,9 @@ function App() {
     );
   };
   
-  
   return (
     <BrowserRouter>
+      <Popup />
       <div className="grid-container" id="top">
         <div className="discounts">
           <p>DEAL ENDS SOON!</p>
@@ -84,6 +84,7 @@ function App() {
           </div>
           <button
               type="button"
+              aria-label="open sidebar"
               className="open-sidebar"
               onClick={() => setSidebarIsOpen(true)}
             >
@@ -155,6 +156,7 @@ function App() {
         </header>
         <aside className={sidebarIsOpen ? 'open': ''}>
           <button onClick={() => setSidebarIsOpen(false)}
+            aria-label="close sidebar"
             className="close-sidebar"
             type="button">
               X
@@ -294,7 +296,13 @@ function App() {
                 <label htmlFor="newsletter">Sign up for our email now for great deals</label>
                 <div className="newsletter-submit">
                   <input id="newsletter" type="text" className="newsletter-input" placeholder="Enter Email Here"></input>
-                  <button type="submit" className="newsletter-button" >Sign Up</button>
+                  <button 
+                    type="submit" 
+                    className="newsletter-button" 
+                    aria-label="Sign Up"
+                  >
+                    Sign Up
+                  </button>
                 </div>
               </form>
               <div id="thanks" className="thanks">
