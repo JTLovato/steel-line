@@ -6,13 +6,12 @@ import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import Product from '../components/Product';
 import Rating from '../components/Rating';
-import { prices, ratings, teams } from '../utils';
+import { prices, ratings } from '../utils';
 
 export default function SearchScreen(props) {
   const {
       name = 'all',
       category = 'all',
-      team = 'all',
       min = 0,
       max = 0,
       rating = 0,
@@ -36,7 +35,6 @@ export default function SearchScreen(props) {
       listProducts({
         pageNumber,
         name: name !== 'all' ? name : '',
-        team,
         category: category !== 'all' ? category : '',
         min,
         max,
@@ -44,7 +42,7 @@ export default function SearchScreen(props) {
         order,
       })
     );
-}, [category, team, dispatch, max, min, name, order, rating, pageNumber]);
+}, [category, dispatch, max, min, name, order, rating, pageNumber]);
 
   const getFilterUrl = (filter) => {
     const filterPage = filter.page || pageNumber;
@@ -92,7 +90,9 @@ export default function SearchScreen(props) {
                   </ul>
                 )}
               </div>
-              <div>
+
+              {/* TEAM SORTING COMING SOON */}
+              {/* <div>
                 <h3>Teams</h3>
                   <ul>
                     {teams.map((t) => (
@@ -106,7 +106,9 @@ export default function SearchScreen(props) {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div> */}
+                {/* TEAM SORTING COMING SOON */}
+
                 <div>
                   <h3>Price</h3>
                   <ul>
