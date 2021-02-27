@@ -12,7 +12,7 @@ export default function Product(props) {
           <img className="banner" src="/../img/icons/almost-out.png" alt="Almost Sold Out"></img>
         }
         {product.countInStock === 0 &&
-          <img className="baner" src="/../img/icons/sold-out.png" alt="Item Sold Out"></img>
+          <img className="banner" src="/../img/icons/sold-out.png" alt="Item Sold Out"></img>
         }
       </div>
       <Link to={`/product/${product._id}`}>
