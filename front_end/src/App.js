@@ -24,7 +24,7 @@ import UserListScreen from './screens/UserListScreen';
 import UserEditScreen from './screens/UserEditScreen';
 import SearchScreen from './screens/SearchScreen';
 import PageNotFound from './screens/PageNotFoundScreen';
-import Popup from './components/Popup';
+// import Popup from './components/Popup';
 
 
 
@@ -68,7 +68,7 @@ function App() {
   
   return (
     <BrowserRouter>
-      <Popup />
+//       <Popup />
       <div className="grid-container" id="top">
         <div className="discounts">
           <p>DEAL ENDS SOON!</p>
