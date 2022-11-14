@@ -68,7 +68,7 @@ function App() {
   
   return (
     <BrowserRouter>
-//       <Popup />
+
       <div className="grid-container" id="top">
         <div className="discounts">
           <p>DEAL ENDS SOON!</p>
